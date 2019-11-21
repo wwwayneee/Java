@@ -3,7 +3,11 @@
 ## 前言
 ---
 
-由于先前的课程中并没有讲过关于网络与信息方面的知识，笔者之也并没有接触过。而这次的选题是HttpComponents，涉及到大量的网络方面的知识，所以在准备这篇报告的第一阶段笔者的主要精力是放在研究一些基本的网络方面的知识。要讲到HttpComponents，就先要讲一下关于http的各种知识。
+由于先前的课程中并没有讲过关于网络与信息方面的知识，笔者之也并没有接触过。而这次的选题是HttpComponents，涉及到大量的网络方面的知识，所以在准备这篇报告的第一阶段笔者的主要精力是放在研究一些基本的网络方面的知识。要讲到HttpComponents，就先要讲一下关于http的各种知识。  
+##### 第一阶段  
+第一阶段解读的重点放在了连接http周边知识上。  
+##### 第二阶段
+##### 第三阶段
 
 注意！本文档目前还未更新完，完整文档请参考 https://app.gitbook.com/@wwwayneee/s/objectorientedprogramming/
 
@@ -38,6 +42,6 @@ URL组成：<协议>://<主机>:<端口>/<路径> （端口和路径可以省略
 //pics
 
 
-![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1.png)
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1.png)条件随机场模型示意图</div>
 another test
 test
