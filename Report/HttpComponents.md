@@ -1,17 +1,43 @@
 # HttpComponents
 
-## another soki
+## 前言
+---
 
-### another another soki
+由于先前的课程中并没有讲过关于网络与信息方面的知识，笔者之也并没有接触过。而这次的选题是HttpComponents，涉及到大量的网络方面的知识，所以在准备这篇报告的第一阶段笔者的主要精力是放在研究一些基本的网络方面的知识。要讲到HttpComponents，就先要讲一下关于http的各种知识。
 
-normal text
+注意！本文档目前还未更新完，完整文档请参考 https://app.gitbook.com/@wwwayneee/s/objectorientedprogramming/
 
-this is just a test document.
+## 相关介绍
+介绍一些相关的网络知识  
 
-$$
-\frac{e^x}{1 + e^x} \tag{1.2}
-$$
+---
 
-![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
-![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
+###### http
+从万维网（World Wide Web ）服务器传输超文本到本地浏览器，基于请求与响应，无状态的，应用层的协议。
+从本地角度去看http协议，就相当于浏览器访问一个url，然后就得到相应的web页面
+从服务器角度去看http协议，就相当于客户端（浏览器）链接远程http服务器，服务器返回数据，浏览器接收、解析数据之后显示出来。
+###### https
+利用SSL（此处：基于应用层的访问控制）进行传输层加密的http传输协议，更加安全。 
+代理服务器：代理个人网络从互联网服务商那里获取信息（通过在二者间建立非直接的连接），可以保证安全。
+###### 代理服务器
+两个网络终端（客户端和服务器）之间的中间代理机构，代理个人网络从服务器那里获取信息。客户端与代理服务器连接之后根据代理使用的协议发送请求（请求与目标服务器进行连接）其中的协议常见的就有http和Socks。
+###### Cookies
+网站保存在用户端的含有用户信息以及行为的文本，用以弥补http协议的无状态性。举两个例子：  
+
+	1.网站上的记住密码。网站将用户的身份和密码经过加密cookies存在用户硬盘中，下次登录的时候就不用手动输密码了。
+	2.上下文相关网址。如果上一个页面会对下一个页面产生影响，那次是就必须使用cookies。比如一个购物网站，上一个页面选好商品，接下来的页面进行支付，支付页面就必须知道上一个页面中购买了什么东西，此时就需要cookies。
+
+客户端发送一个请求到服务器的请求消息格式：（后面还会说到） 请求头部的最后会有一个空行，表示请求头部结束，接下来为请求数据。  
+
+
+###### 请求消息格式
+
+URI（Uniform Resource Identifier，统一资源标识符）: web上每一种可用的资源。
+URL(Uniform Resource Locator，统一资源定位符)：一种资源位置的抽象唯一识别方法。
+URL组成：<协议>://<主机>:<端口>/<路径> （端口和路径可以省略，端口默认80）
+//pics
+
+
+![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1.png)
+another test
 test
