@@ -42,6 +42,4 @@ URL组成：<协议>://<主机>:<端口>/<路径> （端口和路径可以省略
 //pics
 
 
-<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1.png)条件随机场模型示意图</div>
-another test
-test
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1_httpcomponents.png)条件随机场模型示意图</div>
