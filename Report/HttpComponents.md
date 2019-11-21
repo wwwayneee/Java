@@ -1,4 +1,5 @@
 # HttpComponents
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1_httpcomponents.png)</div>
 
 ## 前言
 ---
@@ -33,13 +34,37 @@
 
 客户端发送一个请求到服务器的请求消息格式：（后面还会说到） 请求头部的最后会有一个空行，表示请求头部结束，接下来为请求数据。  
 
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/2_request_format.png)消息请求格式</div>  
 
-###### 请求消息格式
-
-URI（Uniform Resource Identifier，统一资源标识符）: web上每一种可用的资源。  
+URI(Uniform Resource Identifier，统一资源标识符): web上每一种可用的资源。  
 URL(Uniform Resource Locator，统一资源定位符)：一种资源位置的抽象唯一识别方法。  
-URL组成：<协议>://<主机>:<端口>/<路径> （端口和路径可以省略，端口默认80）
-//pics
+URL组成：<协议>://<主机>:<端口>/<路径> （端口和路径可以省略，端口默认80）  
 
 
-<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1_httpcomponents.png)条件随机场模型示意图</div>
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/3_url.png)URL组成</div>  
+http协议的九种请求方法（HttpComponents实现了）  
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/4_9ways_of_http_request.png)http协议的九种请求方法</div>  
+
+其中最常用的两种方法：get 和 post  
+GET - 从指定的资源请求数据。  
+POST - 向指定的资源提交要被处理的数据。  
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/5_get_post.png)GET 和 POST</div>  
+
+本文要介绍的HttpComponents：用于提供对于http服务器的访问功能。
+
+## 关于HttpComponents  
+---
+HttpComponents：用于提供对于http服务器的访问功能的超文本传输协议，其对HTTP底层协议进行了很好的封装 。  
+在构建HTTP客户端或者服务器端应用中很常见，比如WEB浏览器、爬虫、HTTP代理、WEB服务库、基于调整或扩展HTTP协议的分布式通信系统 etc.  
+
+##### 主要功能
+实现http方法：GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH 
+对https协议的支持（https = http + SSL） 
+对代理服务器的支持 
+对cookies的支持 
+支持在特定的执行上下文（HTTP上下文）中执行HTTP消息——http不行（ 无状态、面向响应请求 ）
+
+##### 组建结构
+
+
+本次分析HttpComponents Core
