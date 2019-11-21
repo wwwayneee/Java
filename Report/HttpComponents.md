@@ -33,9 +33,7 @@
 ###### 请求消息格式
 
 URI（Uniform Resource Identifier，统一资源标识符）: web上每一种可用的资源。  
-
 URL(Uniform Resource Locator，统一资源定位符)：一种资源位置的抽象唯一识别方法。  
-
 URL组成：<协议>://<主机>:<端口>/<路径> （端口和路径可以省略，端口默认80）
 //pics
 
