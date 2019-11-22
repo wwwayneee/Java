@@ -37,7 +37,6 @@ URL(Uniform Resource Locator，统一资源定位符)：一种资源位置的抽
 URL组成：<协议>://<主机>:<端口>/<路径> （端口和路径可以省略，端口默认80）
 //pics
 
-
 ![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/1.png)
 another test
 test
