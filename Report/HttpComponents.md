@@ -65,6 +65,234 @@ HttpComponents：用于提供对于http服务器的访问功能的超文本传�
 支持在特定的执行上下文（HTTP上下文）中执行HTTP消息——http不行（ 无状态、面向响应请求 ）
 
 ##### 组建结构
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/6_httpcomponents_structure.png)HttpComponents 组件结构</div>  
+
+本次分析HttpComponents Core  
+
+## HttpComponents Core  
+简称HttpCore  
+实现基本http协议的组件，用于搭建客户端和服务器端的http服务。  
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/7_guide_book.png)官方文档</div>  
+
+官方文档： httpcore-tutorial http://hc.apache.org/httpcomponents-core-ga/tutorial/pdf/httpcore-tutorial.pdf  
+
+### HttpCore的范围  
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/8_range.png)HttpCore的范围</div>  
+### HttpCore的目标  
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/9_target.png)HttpCore的目标</div>  
+
+### HttpCore中所有的包（17个）
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/10_packages.png)HttpCore中所有的包</div>  
+### HttpCore中所有的类（252个）
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/11_classes.png)</div>  
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/12_classes.png)</div>  
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/13_classes.png)</div>  
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/14_classes.png)HttpCore中所有的类</div>  
+
+## 重点介绍两个类  
+
+BasicHttpRequest & BasicHttpResponse  
+---
+### BasicHttpRequest
+路径：org.apache.http.message  
+继承： AbstractHttpMessage  
+实现接口： HttpRequest  
+
+#### BasicHttpRequest中所有方法及其来源  
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/15_BasicHttpRequest.png)BasicHttpRequest中所有方法及其来源</div>  
+
+	Constructors
+	构造器：一个类里用于建立对象的方法，与类名相同，没有返回类型，不会被继承，且不会有范围修饰符。
+	Java允许构造器重载（一个类被允许拥有多个接受不同参数种类的构造器同时存在，方法名称相同，参数列表不同）
+	如果一个类中没有构造方法，那么编译器会为类加上一个默认的构造方法。
+	构造器在创建对象的时候调用，为正在创建的对象的成员变量赋初值。
+  
+    
+	
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/16_default_constructor.png)BasicHttpRequest中所有方法及其来源</div>  
+
+#### BasicHttpRequest中构造器  
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/17_Request_constructors.png)BasicHttpRequest中构造器</div>  
+
+接下来分别介绍BasicHttpRequest中的构造器  
+
+```
+/**
+ * Creates request message with the given method and request path.
+ *
+ * @param method request method.
+ * @param path request path.
+ */
+public BasicHttpRequest(final String method, final String path) {
+    super();
+    this.method = method;
+    if (path != null) {
+        try {
+            setUri(new URI(path));
+        } catch (final URISyntaxException ex) {
+            this.path = path;
+        }
+    }
+}
+```
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/18_Request_table_1_4.png)</div>  
+
+```
+/**
+ * Creates request message with the given method, host and request path.
+ *
+ * @param method request method.
+ * @param host request host.
+ * @param path request path.
+ *
+ * @since 5.0
+ */
+public BasicHttpRequest(final String method, final HttpHost host, final String path) {
+    super();
+    this.method = Args.notNull(method, "Method name");
+    this.scheme = host != null ? host.getSchemeName() : null;
+    this.authority = host != null ? new URIAuthority(host) : null;
+    this.path = path;
+}
+```
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/19_Request_table_2_5.png)</div>  
+
+```
+/**
+ * Creates request message with the given method, request URI.
+ *
+ * @param method request method.
+ * @param requestUri request URI.
+ *
+ * @since 5.0
+ */
+public BasicHttpRequest(final String method, final URI requestUri) {
+    super();
+    this.method = Args.notNull(method, "Method name");
+    setUri(Args.notNull(requestUri, "Request URI"));
+}
+```
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/20_Request_table_3_6.png)</div>  
+
+```
+/**
+ * Creates request message with the given method and request path.
+ *
+ * @param method request method.
+ * @param path request path.
+ *
+ * @since 5.0
+ */
+public BasicHttpRequest(final Methods method, final String path) {
+    super();
+    this.method = Args.notNull(method, "Method").name();
+    if (path != null) {
+        try {
+            setUri(new URI(path));
+        } catch (final URISyntaxException ex) {
+            this.path = path;
+        }
+    }
+}
+```
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/18_Request_table_1_4.png)</div>  
+
+```
+/**
+ * Creates request message with the given method, host and request path.
+ *
+ * @param method request method.
+ * @param host request host.
+ * @param path request path.
+ *
+ * @since 5.0
+ */
+public BasicHttpRequest(final Methods method, final HttpHost host, final String path) {
+    super();
+    this.method = Args.notNull(method, "Method").name();
+    this.scheme = host != null ? host.getSchemeName() : null;
+    this.authority = host != null ? new URIAuthority(host) : null;
+    this.path = path;
+}
+```
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/19_Request_table_2_5.png)</div>  
+
+```
+/**
+ * Creates request message with the given method, request URI.
+ *
+ * @param method request method.
+ * @param requestUri request URI.
+ *
+ * @since 5.0
+ */
+public BasicHttpRequest(final Methods method, final URI requestUri) {
+    super();
+    this.method = Args.notNull(method, "Method").name();
+    setUri(Args.notNull(requestUri, "Request URI"));
+}
+```
 
 
-本次分析HttpComponents Core
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/20_Request_table_3_6.png)</div>  
+
+### BasicHttpResponse
+
+路径：org.apache.http.message  
+继承： AbstractHttpMessage  
+实现接口： HttpResponse  
+
+#### BasicHttpResponse中所有方法及其来源
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/21_BasicHttpResponse.png)BasicHttpResponse中所有方法及其来源</div>  
+
+#### BasicHttpResponse中构造器
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/22_Response_constructors.png)BasicHttpResponse中构造器</div>  
+
+```
+/**
+ * Creates a new response.
+ *
+ * @param code              the status code
+ * @param catalog           the reason phrase catalog, or
+ *                          {@code null} to disable automatic
+ *                          reason phrase lookup
+ * @param locale            the locale for looking up reason phrases, or
+ *                          {@code null} for the system locale
+ */
+public BasicHttpResponse(
+        final int code,
+        final ReasonPhraseCatalog catalog,
+        final Locale locale) {
+    super();
+    this.code = Args.positive(code, "Status code");
+    this.reasonCatalog = catalog != null ? catalog : EnglishReasonPhraseCatalog.INSTANCE;
+    this.locale = locale;
+}
+```
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/23_Response_table_1.png)</div>  
+
+其中有一个新的概念：status code，状态码，这里介绍一下。  
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/24_status_code.png)status code</div>  
+
+```
+/**
+ * Creates a new response.
+ *
+ * @param code          the status code of the response
+ * @param reasonPhrase  the reason phrase to the status code, or {@code null}
+ */
+public BasicHttpResponse(final int code, final String reasonPhrase) {
+    this.code = Args.positive(code, "Status code");
+    this.reasonPhrase = reasonPhrase;
+    this.reasonCatalog = EnglishReasonPhraseCatalog.INSTANCE;
+}
+```
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/25_Response_table_2.png)</div>  
