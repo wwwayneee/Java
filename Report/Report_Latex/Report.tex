@@ -61,11 +61,17 @@
 			\normalsize 张宇轩, 2017K8009908041\\
 		\end{CJK}{}
 	\end{center}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 3.5cm, width = 5.5cm]{pics/1_httpcomponents.png}	
+		%\caption{}
+	\end{figure}
+
 	\hspace*{\fill} \\ %空行
 	
 	\tableofcontents{} %—— 制作目录(目录是根据标题自动生成的)
 	\clearpage
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Preface}
 	\subparagraph{}
 	\begin{CJK}{UTF8}{gbsn}
@@ -132,14 +138,49 @@
 	\subsubsection{Request Format}
 	\subparagraph{}
 	\begin{CJK}{UTF8}{gbsn}
-		客户端发送一个请求到服务器的请求消息格式：（后面还会说到） 请求头部的最后会有一个空行，表示请求头部结束，接下来为请求数据。  
+		客户端发送一个请求到服务器的请求消息格式如 Figure 1 所示（后面还会说到），请求头部的最后会有一个空行，表示请求头部结束，接下来为请求数据。
 	\end{CJK}{}
 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 4.5cm, width = 12cm]{pics/2_request_format.png}	
+		\caption{Request Format}
+	\end{figure}
+	\subsubsection{URL}
+	\subparagraph{}
+	\begin{CJK}{UTF8}{gbsn}
+		URL(Uniform Resource Locator，统一资源定位符)：一种资源位置的抽象唯一识别方法。\\
+		URL组成：$<$协议$>$://$<$主机$>$:$<$端口$>$/$<$路径$>$ （端口和路径可以省略，端口默认80），如 Figure 2 所示： \\
+		另外需要注意URI(Uniform Resource Identifier，统一资源标识符)，用来表示web上每一种可用的资源，与URL不一样。 
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 3.5cm, width = 16cm]{pics/3_url.png}	
+		\caption{Request Format}
+	\end{figure}
 
+	\subsubsection{Http Request Methods}
+	\subparagraph{}
+	\begin{CJK}{UTF8}{gbsn}
+		Http 协议共有9种请求方法，如 Figure 3 所示，其中最常用的两种方法是 GET 和 POST，其对比如 Figure 4 所示。\\
+		GET - 从指定的资源请求数据。\\
+		POST - 向指定的资源提交要被处理的数据。
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 7.6cm, width = 16cm]{pics/4_9ways_of_http_request.png}	
+		\caption{Request Format}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 4.8cm, width = 15cm]{pics/5_get_post.png}	
+		\caption{Request Format}
+	\end{figure}
 	\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{The Second Part}
 	\clearpage
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{The Third Part}
 
 \end{document}

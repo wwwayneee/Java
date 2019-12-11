@@ -1,12 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.12)  7 DEC 2019 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.5)  10 DEC 2019 23:57
 entering extended mode
-**C:/Documents/GitHub/Java/Report/Report_Latex/Report.tex
-(C:/Documents/GitHub/Java/Report/Report_Latex/Report.tex
-LaTeX2e <2019-10-01>
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Report.tex
+(./Report.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -20,31 +23,28 @@ File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
-hm.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
 \float@exts=\toks14
-\float@box=\box27
+\float@box=\box26
 \@float@everytoks=\toks15
-\@floatcapt=\box28
+\@floatcapt=\box27
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks16
 \c@algorithm=\count89
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
-hmic.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
-y"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
@@ -55,47 +55,41 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \ALC@tlm=\skip43
 \algorithmicindent=\skip44
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
-y"
-Package: amsmath 2019/04/01 v2.17c AMS math features
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
-y"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
-"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen103
 ))
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
-"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
-"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 227.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count95
 \leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 389.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count97
 \DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box29
-\strutbox@=\box30
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count99
 \c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
@@ -116,25 +110,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \multlinegap=\skip46
 \multlinetaggap=\skip47
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2855.
-LaTeX Info: Redefining \] on input line 2856.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
-ty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
-sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
-sty"
-Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+(/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen112
 \lightrulewidth=\dimen113
 \cmidrulewidth=\dimen114
@@ -153,14 +143,12 @@ Package: booktabs 2019/10/08 v1.6180339 publication quality tables
 \@lastruleclass=\count109
 \@thisrulewidth=\dimen124
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
-y"
-Package: caption 2019/09/01 v3.3d Customizing captions (AR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
-ty"
-Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen125
 \captionmargin@=\dimen126
 \captionwidth=\dimen127
@@ -169,28 +157,27 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen130
 \caption@hangindent=\dimen131
 )
-\c@caption@flags=\count110
-\c@ContinuedFloat=\count111
+\c@ContinuedFloat=\count110
 Package caption Info: float package is loaded.
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk\CJKutf8.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
 Package: CJKutf8 2015/04/18 4.8.4
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
-ty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
-Package: inputenc 2018/08/11 v1.3c Input encoding file
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk\CJK.sty"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.sty
 Package: CJK 2015/04/18 4.8.4
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/mule\MULEenc.s
-ty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
 Package: MULEenc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk\CJK.enc"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.enc
 File: CJK.enc 2015/04/18 4.8.4
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
@@ -258,109 +245,112 @@ Now handling font encoding C62 ...
 ... no UTF-8 mapping file for font encoding C62
 )
 LaTeX Info: Redefining \selectfont on input line 755.
-\CJK@indent=\box31
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
-"
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+\CJK@indent=\box30
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 ))
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/diagbox\diagbox.st
-y"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/diagbox/diagbox.sty
 Package: diagbox 2016/12/28 v2.2 Making table heads with diagonal lines
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pict2e\pict2e.sty"
-Package: pict2e 2019/08/20 v0.3c Improved picture commands (HjG,RN,JT)
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pict2e\pict2e.cfg"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pict2e/pict2e.cfg
 File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
 )
 Package pict2e Info: Driver file: pdftex.def on input line 119.
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
-x.def"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pict2e\p2e-pdftex.
-def"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 \pIIe@GRAPH=\toks25
 \@arclen=\dimen132
 \@arcrad=\dimen133
 \@tempdimd=\dimen134
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp.sty"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
 
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\defpattern.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count112
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-basic.sty"
+\actioncount=\count111
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count113
-\FP@xia=\count114
-\FP@xib=\count115
-\FP@xfa=\count116
-\FP@xfb=\count117
-\FP@rega=\count118
-\FP@regb=\count119
-\FP@regs=\count120
-\FP@times=\count121
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-addons.sty
-"
+\FP@xs=\count112
+\FP@xia=\count113
+\FP@xib=\count114
+\FP@xfa=\count115
+\FP@xfb=\count116
+\FP@rega=\count117
+\FP@regb=\count118
+\FP@regs=\count119
+\FP@times=\count120
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-snap.sty"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-snap.sty
 Package: fp-snap 1995/04/05
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-exp.sty"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-exp.sty
 Package: fp-exp 1995/04/03
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-trigo.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-trigo.sty
 Package: fp-trigo 1995/04/14
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-pas.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-pas.sty
 Package: fp-pas 1994/08/29
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-random.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count122
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eqn.sty"
+\FPseed=\count121
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-upn.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-upn.sty
 Package: fp-upn 1996/10/21
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fp\fp-eval.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 ))
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count123
-\calc@Bcount=\count124
+\calc@Acount=\count122
+\calc@Bcount=\count123
 \calc@Adimen=\dimen135
 \calc@Bdimen=\dimen136
 \calc@Askip=\skip48
 \calc@Bskip=\skip49
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count125
+\calc@Ccount=\count124
 \calc@Cskip=\skip50
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \col@sep=\dimen137
-\ar@mcellbox=\box32
+\ar@mcellbox=\box31
 \extrarowheight=\dimen138
 \NC@list=\toks26
 \extratabsurround=\skip51
 \backup@length=\skip52
-\ar@cellbox=\box33
+\ar@cellbox=\box32
 )
-\diagbox@boxa=\box34
-\diagbox@boxb=\box35
-\diagbox@boxm=\box36
+\diagbox@boxa=\box33
+\diagbox@boxb=\box34
+\diagbox@boxm=\box35
 \diagbox@wd=\dimen139
 \diagbox@ht=\dimen140
 \diagbox@insepl=\dimen141
@@ -368,22 +358,19 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \diagbox@outsepl=\dimen143
 \diagbox@outsepr=\dimen144
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
-sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.
-sty"
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
-sty"
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count126
-\Gm@cntv=\count127
-\c@Gm@tempcnt=\count128
+\Gm@cnth=\count125
+\Gm@cntv=\count126
+\c@Gm@tempcnt=\count127
 \Gm@bindingoffset=\dimen145
 \Gm@wd@mp=\dimen146
 \Gm@odd@mp=\dimen147
@@ -393,49 +380,41 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen151
 \Gm@layoutvoffset=\dimen152
 \Gm@dimlist=\toks27
-
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
-cfg"))
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
-sty"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
-sty"
-Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
-ics.cfg"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen153
 \Gin@req@width=\dimen154
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ulem\ulem.sty"
-\UL@box=\box37
-\UL@hyphenbox=\box38
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box36
+\UL@hyphenbox=\box37
 \UL@skip=\skip53
 \UL@hook=\toks28
 \UL@height=\dimen155
-\UL@pe=\count129
+\UL@pe=\count128
 \UL@pixel=\dimen156
-\ULC@box=\box39
+\ULC@box=\box38
 Package: ulem 2012/05/18
 \ULdepth=\dimen157
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
-sty"
-Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-hyperref.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-generic.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -446,9 +425,13 @@ Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -470,129 +453,118 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.s
-ty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
-.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen158
-\Hy@linkcounter=\count130
-\Hy@pagecounter=\count131
+\Hy@linkcounter=\count129
+\Hy@pagecounter=\count130
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
-f"
-File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count132
+\Hy@SavedSpaceFactor=\count131
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.
-cfg"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4540.
-Package hyperref Info: Link nesting OFF on input line 4545.
-Package hyperref Info: Hyper index ON on input line 4548.
-Package hyperref Info: Plain pages OFF on input line 4555.
-Package hyperref Info: Backreferencing OFF on input line 4560.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4793.
-\c@Hy@tempcnt=\count133
- ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count132
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5152.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen159
-\Fld@menulength=\count134
+\Fld@menulength=\count133
 \Field@Width=\dimen160
 \Fld@charsize=\dimen161
-Package hyperref Info: Hyper figures OFF on input line 6423.
-Package hyperref Info: Link nesting OFF on input line 6428.
-Package hyperref Info: Hyper index ON on input line 6431.
-Package hyperref Info: backreferencing OFF on input line 6438.
-Package hyperref Info: Link coloring OFF on input line 6443.
-Package hyperref Info: Link coloring with OCG OFF on input line 6448.
-Package hyperref Info: PDF/A mode OFF on input line 6453.
-LaTeX Info: Redefining \ref on input line 6493.
-LaTeX Info: Redefining \pageref on input line 6497.
-\Hy@abspage=\count135
-\c@Item=\count136
-\c@Hfootnote=\count137
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count134
+\c@Item=\count135
+\c@Hfootnote=\count136
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
-ef"
-File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
-\Fld@listcount=\count138
-\c@bookmark@seq@number=\count139
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count137
+\c@bookmark@seq@number=\count138
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfile
-check.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip54
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
-sty"
-\lst@mode=\count140
-\lst@gtempboxa=\box40
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count139
+\lst@gtempboxa=\box39
 \lst@token=\toks29
-\lst@length=\count141
+\lst@length=\count140
 \lst@currlwidth=\dimen162
-\lst@column=\count142
-\lst@pos=\count143
+\lst@column=\count141
+\lst@pos=\count142
 \lst@lostspace=\dimen163
 \lst@width=\dimen164
-\lst@newlines=\count144
-\lst@lineno=\count145
+\lst@newlines=\count143
+\lst@lineno=\count144
 \lst@maxwidth=\dimen165
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
-ty"
-File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count146
-\lst@skipnumbers=\count147
-\lst@framebox=\box41
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count145
+\lst@skipnumbers=\count146
+\lst@framebox=\box40
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
-cfg"
-File: listings.cfg 2019/09/10 1.8c listings configuration
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2019/09/10 1.8c (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigur
-e.sty"
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip55
 \subfigcapskip=\skip56
 \subfigcaptopadj=\dimen166
 \subfigbottomskip=\skip57
 \subfigcapmargin=\dimen167
 \subfiglabelskip=\skip58
-\c@subfigure=\count148
-\c@lofdepth=\count149
-\c@subtable=\count150
-\c@lotdepth=\count151
+\c@subfigure=\count147
+\c@lofdepth=\count148
+\c@subtable=\count149
+\c@lotdepth=\count150
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigur
-e.cfg")
+(/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip59
 \subfig@bottom=\skip60
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty"
-Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -605,13 +577,14 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
-File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -681,8 +654,6 @@ File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
    defining Unicode char U+25E6 (decimal 9702)
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+27E8 (decimal 10216)
-   defining Unicode char U+27E9 (decimal 10217)
    defining Unicode char U+FEFF (decimal 65279)
 ))
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -749,18 +720,16 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.sty
-"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks30
 \verbatim@line=\toks31
 \verbatim@in@stream=\read1
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color
-.cfg"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -773,7 +742,8 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (Report.aux)
+)
+(./Report.aux)
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -855,10 +825,8 @@ LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-5.
-
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 55.
@@ -868,27 +836,23 @@ Package caption Info: listings package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
-df.mkii"
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
+\scratchcounter=\count151
 \scratchdimen=\dimen168
-\scratchbox=\box42
-\nofMPsegments=\count153
-\nofMParguments=\count154
+\scratchbox=\box41
+\nofMPsegments=\count152
+\nofMParguments=\count153
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count155
+\MPscratchCnt=\count154
 \MPscratchDim=\dimen169
-\MPnumerator=\count156
-\makeMPintoPDFobject=\count157
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
 \everyMPtoPDFconversion=\toks33
-)
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
-base.sty"
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
-y"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -897,7 +861,11 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -932,60 +900,62 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box43
+\AtBeginShipoutBox=\box42
 Package hyperref Info: Link coloring OFF on input line 55.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
-ty"
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitl
-estring.sty"
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count158
+\c@section@level=\count157
 )
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
 LaTeX Info: Redefining \nameref on input line 55.
- (Report.out) (Report.out)
+
+(./Report.out) (./Report.out)
 \@outlinefile=\write3
 \openout3 = `Report.out'.
 
-\c@lstlisting=\count159
+\c@lstlisting=\count158
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.bdg"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.en
-c"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.chr"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Trying to load font information for C70+gbsn on input line 
-61.
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 61.
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\c70gbsn.f
-d"
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
 File: c70gbsn.fd 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\c70gbsn.f
-dx"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2015/04/18 4.8.4
 )
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+<pics/1_httpcomponents.png, id=55, 202.7575pt x 110.4125pt>
+File: pics/1_httpcomponents.png Graphic file (type png)
+<use pics/1_httpcomponents.png>
+Package pdftex.def Info: pics/1_httpcomponents.png  used on input line 66.
+(pdftex.def)             Requested size: 156.49501pt x 99.58932pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-(Report.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
-
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+(./Report.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
@@ -993,173 +963,207 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{C:/Users/Wayne/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pics/
+1_httpcomponents.png>]
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
-) [2
+)
+[2
 
-]
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+] (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-Overfull \hbox (34.65034pt too wide) in paragraph at lines 128--129
+Overfull \hbox (34.65034pt too wide) in paragraph at lines 134--135
  [] 
  []
 
-("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.enc"
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
-) ("C:\Users\Wayne\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.ch
-r"
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
-) [3
+)
+<pics/2_request_format.png, id=181, 502.87875pt x 178.6675pt>
+File: pics/2_request_format.png Graphic file (type png)
+<use pics/2_request_format.png>
+Package pdftex.def Info: pics/2_request_format.png  used on input line 146.
+(pdftex.def)             Requested size: 341.43124pt x 128.04344pt.
 
-] [4
+[3
+
+] (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+<pics/3_url.png, id=210, 758.835pt x 181.67876pt>
+File: pics/3_url.png Graphic file (type png)
+<use pics/3_url.png>
+Package pdftex.def Info: pics/3_url.png  used on input line 158.
+(pdftex.def)             Requested size: 455.24663pt x 99.5854pt.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+<pics/4_9ways_of_http_request.png, id=211, 818.05624pt x 350.30875pt>
+File: pics/4_9ways_of_http_request.png Graphic file (type png)
+<use pics/4_9ways_of_http_request.png>
+Package pdftex.def Info: pics/4_9ways_of_http_request.png  used on input line 1
+71.
+(pdftex.def)             Requested size: 455.24988pt x 216.24306pt.
+<pics/5_get_post.png, id=212, 882.29625pt x 252.945pt>
+File: pics/5_get_post.png Graphic file (type png)
+<use pics/5_get_post.png>
+Package pdftex.def Info: pics/5_get_post.png  used on input line 176.
+(pdftex.def)             Requested size: 426.79576pt x 136.57668pt.
+
+[4 <./pics/2_request_format.png> <./pics/3_url.png>] [5 <./pics/4_9ways_of_http
+_request.png> <./pics/5_get_post.png>] [6
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
- [5
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+ [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
- (Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+ (./Report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: EDCE45300E96B87863E1CB6F4B73E282;597.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
+(rerunfilecheck)             Checksum: ADCBFD8100A5F323EA05E34286FD2582;740.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 13557 strings out of 492452
- 193907 string characters out of 3120063
- 305361 words of memory out of 3000000
- 17475 multiletter control sequences out of 15000+200000
- 23175 words of font info for 85 fonts, out of 3000000 for 9000
+ 13260 strings out of 492649
+ 188527 string characters out of 6129623
+ 301704 words of memory out of 5000000
+ 16671 multiletter control sequences out of 15000+600000
+ 24221 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,42p,462b,804s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Wayne/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Wayne/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu30.pfb><C:/Users/Wayne/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><C:/Users/W
-ayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><C:
-/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu50
-.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu
-/gbsnu51.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arph
-ic/gbsnu/gbsnu52.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/arphic/gbsnu/gbsnu53.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/arphic/gbsnu/gbsnu54.pfb><C:/Users/Wayne/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/arphic/gbsnu/gbsnu55.pfb><C:/Users/Wayne/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu56.pfb><C:/Users/Wayne/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu57.pfb><C:/Users/Wayne/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu59.pfb><C:/Users/
-Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><C
-:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu5
-c.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsn
-u/gbsnu5e.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arp
-hic/gbsnu/gbsnu5f.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/arphic/gbsnu/gbsnu60.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/arphic/gbsnu/gbsnu62.pfb><C:/Users/Wayne/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu63.pfb><C:/Users/Wayne/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu65.pfb><C:/Users/Wayne/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu66.pfb><C:/Users/Wayne/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu67.pfb><C:/Users
-/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu68.pfb><
-C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu
-6b.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbs
-nu/gbsnu6c.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ar
-phic/gbsnu/gbsnu6d.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/arphic/gbsnu/gbsnu70.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/arphic/gbsnu/gbsnu71.pfb><C:/Users/Wayne/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu72.pfb><C:/Users/Wayne/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu74.pfb><C:/Users/Wayne/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu75.pfb><C:/Users/Wayne/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu76.pfb><C:/User
-s/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu77.pfb>
-<C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsn
-u78.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gb
-snu/gbsnu79.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/a
-rphic/gbsnu/gbsnu7a.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/arphic/gbsnu/gbsnu7b.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/arphic/gbsnu/gbsnu7c.pfb><C:/Users/Wayne/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu7e.pfb><C:/Users/Wayne/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu7f.pfb><C:/Users/Wayne/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu80.pfb><C:/Users/Wayne
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu83.pfb><C:/Use
-rs/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu88.pfb
-><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbs
-nu89.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/g
-bsnu/gbsnu8b.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-arphic/gbsnu/gbsnu8d.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/arphic/gbsnu/gbsnu8e.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/arphic/gbsnu/gbsnu8f.pfb><C:/Users/Wayne/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu90.pfb><C:/Users/Wayne/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu91.pfb><C:/Users/Wayne/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu94.pfb><C:/Users/Wayn
-e/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu95.pfb><C:/Us
-ers/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gbsnu96.pf
-b><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/gbsnu/gb
-snu97.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/arphic/
-gbsnu/gbsnu98.pfb><C:/Users/Wayne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/arphic/gbsnu/gbsnuff.pfb>
-Output written on Report.pdf (5 pages, 344713 bytes).
+ 36i,7n,39p,417b,802s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu30.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/arphic/gbsnu/gbsnu53.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/arphic/gbsnu/gbsnu54.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphi
+c/gbsnu/gbsnu55.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsn
+u/gbsnu56.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsn
+u57.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu59.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/arphic/gbsnu/gbsnu63.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/arphic/gbsnu/gbsnu65.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arph
+ic/gbsnu/gbsnu66.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbs
+nu/gbsnu67.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbs
+nu68.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.p
+fb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/arphic/gbsnu/gbsnu75.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/arphic/gbsnu/gbsnu76.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arp
+hic/gbsnu/gbsnu77.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gb
+snu/gbsnu78.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
+snu79.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7a.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/arphic/gbsnu/gbsnu83.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/arphic/gbsnu/gbsnu89.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/arphic/gbsnu/gbsnu8b.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/ar
+phic/gbsnu/gbsnu8c.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/g
+bsnu/gbsnu8d.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/g
+bsnu8e.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8f
+.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/arphic/gbsnu/gbsnuff.pfb>
+Output written on Report.pdf (7 pages, 779863 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 
