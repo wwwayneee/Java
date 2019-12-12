@@ -50,7 +50,7 @@ GET - 从指定的资源请求数据。
 POST - 向指定的资源提交要被处理的数据。  
 <div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/5_get_post.png)GET 和 POST</div>  
 
-本文要介绍的HttpComponents：用于提供对于http服务器的访问功能。
+本文要介绍的HttpComponents：用于提供/对于http服务器的访问功能。
 
 ## 关于HttpComponents  
 ---
@@ -296,3 +296,32 @@ public BasicHttpResponse(final int code, final String reasonPhrase) {
 }
 ```
 <div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/25_Response_table_2.png)</div>  
+
+```
+/**
+ * Creates a new response.
+ *
+ * @param code          the status code of the response
+ */
+public BasicHttpResponse(final int code) {
+    this.code = Args.positive(code, "Status code");
+    this.reasonPhrase = null;
+    this.reasonCatalog = EnglishReasonPhraseCatalog.INSTANCE;
+}
+```
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/26_Response_table_3.png)</div>  
+
+
+## 功能讲解  
+### Http请求处理  
+---
+
+- 建立连接 
+- 接收请求 
+- 处理请求 
+- 访问资源
+- 构建响应 
+- 发送响应
+
+<div align="center">![just test](https://raw.githubusercontent.com/wwwayneee/Java/master/Report/pics/26_Response_table_3.png)</div>  
+

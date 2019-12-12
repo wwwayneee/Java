@@ -1,18 +1,25 @@
 \BOOKMARK [1][-]{section.1}{Preface}{}% 1
-\BOOKMARK [1][-]{section.2}{The First Part}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Related Introduction}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{http}{subsection.2.1}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.2}{https}{subsection.2.1}% 5
-\BOOKMARK [3][-]{subsubsection.2.1.3}{Proxy Server}{subsection.2.1}% 6
-\BOOKMARK [3][-]{subsubsection.2.1.4}{Cookies}{subsection.2.1}% 7
-\BOOKMARK [3][-]{subsubsection.2.1.5}{Request Format}{subsection.2.1}% 8
-\BOOKMARK [3][-]{subsubsection.2.1.6}{URL}{subsection.2.1}% 9
-\BOOKMARK [3][-]{subsubsection.2.1.7}{Http Request Methods}{subsection.2.1}% 10
-\BOOKMARK [2][-]{subsection.2.2}{About HttpComponents}{section.2}% 11
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Major Function}{subsection.2.2}% 12
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Component Structure}{subsection.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.3}{HttpComponents Core}{section.2}% 14
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Scope of HttpCore}{subsection.2.3}% 15
-\BOOKMARK [3][-]{subsubsection.2.3.2}{HttpCore API}{subsection.2.3}% 16
-\BOOKMARK [1][-]{section.3}{The Second Part}{}% 17
-\BOOKMARK [1][-]{section.4}{The Third Part}{}% 18
+\BOOKMARK [1][-]{section.2}{Related Introduction}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{http}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{https}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Proxy Server}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Cookies}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Request Format}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{URL}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.7}{Http Request Methods}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{About HttpComponents}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Major Function}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Component Structure}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{HttpComponents Core}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Contents of HttpCore}{subsection.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{BasicHttpRequest}{section.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Methods in BasicHttpRequest}{subsection.3.4}% 16
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Constructors}{subsection.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.5}{BasicHttpResponse}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Methods in BasicHttpResponse}{subsection.3.5}% 19
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Constructors}{subsection.3.5}% 20
+\BOOKMARK [1][-]{section.4}{Functions}{}% 21
+\BOOKMARK [2][-]{subsection.4.1}{Setting up Connections}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.2}{Receving Requests}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.3}{Processing Requests}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.4}{Accessing Resources}{section.4}% 25
