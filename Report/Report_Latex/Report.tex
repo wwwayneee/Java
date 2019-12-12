@@ -689,16 +689,22 @@ public BasicHttpResponse(final int code) {
 
 	\subsection{Processing Requests}
 	\begin{CJK}{UTF8}{gbsn}
+		\subparagraph{}
 		处理请求：服务器对请求报文进行解析，获取请求的资源及请求方法等相关信息 根据方法，资源，首部和可选的主体部分对请求进行处理。\\
-		（之前说过，http常用的请求方法：GET 、 POST 、 PUT 、 DELETE 、 PATCH、HEAD、OPTIONS、TRACE、CONNECT）
+		（之前说过，http常用的请求方法：GET 、 POST 、 PUT 、 DELETE 、 PATCH、HEAD、OPTIONS、TRACE、\\
+		CONNECT）
 	\end{CJK}{}
 
 	\subsection{Accessing Resources}
+	\indent 
 	\begin{CJK}{UTF8}{gbsn}
-		访问资源：服务器获取请求报文中请求的资源web服务器（存放了web资源的服务器），负责向请求者提供对方请求的静态资源或动态运行后生成的资源。\\
-		如果请求静态资源，客户端发起询问上一次修改到现在之间有没有再修改。若返回状态码为服务器端没修改（304），浏览器会直接读取本地的该资源的缓存文件（负载均衡）。如图所示，可以看到第二次访问同一对象的时候直接从 cache 里面拿数据。
+		%\subparagraph{}
+		\indent 访问资源：服务器获取请求报文中请求的资源web服务器（存放了web资源的服务器），负责向请求者提供对方请求的静态资源或动态运行后生成的资源。\\
+		%\subparagraph{}
+		\indent 如果请求静态资源，客户端发起询问上一次修改到现在之间有没有再修改。若返回状态码为服务器端没修改（304），浏览器会直接读取本地的该资源的缓存文件（负载均衡）。如 Figure 16 所示，可以看到第二次访问同一对象的时候直接从 cache 里面拿数据。
 	\end{CJK}{}
 
+	\begin{comment}
 	\begin{figure}
 		\centering
 		\subfigure[The First Access]{
@@ -713,6 +719,35 @@ public BasicHttpResponse(final int code) {
 		}
 		%\caption{大标题} \label{fig:1}
 	\end{figure}
+	\end{comment}
+
+	\begin{figure}[htbp]
+	\centering    %居中
+	\subfigure[The First Access] {
+		\begin{minipage}[H]{19cm}
+			\centering          %子图居中
+			\includegraphics[scale = 0.22]{pics/29_first_access.png}   %以pic.jpg的0.5倍大小输出
+		\end{minipage}
+	}
+		
+	\subfigure[The Second Access] {
+		\begin{minipage}[H]{19cm}
+			\centering      %子图居中
+			\includegraphics[scale = 0.22]{pics/30_second_access.png}   %以pic.jpg的0.5倍大小输出
+		\end{minipage}
+	}
+	 
+	\caption{Two Visits} %  %大图名称
+	\label{fig:1}  %图片引用标记
+	\end{figure}
+
+	\clearpage
+
+	\subsection{Building Response Message}
+	\begin{CJK}{UTF8}{gbsn}
+		\subparagraph{}
+		构建响应报文：一旦Web服务器识别除了资源，就执行请求方法中描述的动作，并返回响应报文。响应报文中包含有响应状态码、响应首部，如果生成了响应主体的话，还包括响应主体。
+	\end{CJK}{}
 
 	\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

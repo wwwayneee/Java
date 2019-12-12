@@ -463,6 +463,8 @@ INPUT ./pics/29_first_access.png
 INPUT pics/30_second_access.png
 INPUT ./pics/30_second_access.png
 INPUT ./pics/30_second_access.png
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 INPUT Report.aux
 INPUT ./Report.out
 INPUT ./Report.out

@@ -37,4 +37,7 @@
 \contentsline {subsection}{\numberline {4.1}Setting up Connections}{20}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Receving Requests}{20}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Processing Requests}{21}{subsection.4.3}
+\contentsline {subparagraph}{}{21}{section*.43}
 \contentsline {subsection}{\numberline {4.4}Accessing Resources}{21}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Building Response Message}{22}{subsection.4.5}
+\contentsline {subparagraph}{}{22}{section*.45}
