@@ -187,6 +187,79 @@
 		\subparagraph{}
 		在构建HTTP客户端或者服务器端应用中很常见，比如WEB浏览器、爬虫、HTTP代理、WEB服务库、基于调整或扩展HTTP协议的分布式通信系统 etc.  
 	\end{CJK}{}
+	\subsubsection{Major Function}
+	\begin{CJK}{UTF8}{gbsn}
+		实现http方法：GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH\\
+		对https协议的支持（https = http + SSL）\\
+		对代理服务器的支持\\
+		对cookies的支持\\
+		支持在特定的执行上下文（HTTP上下文）中执行HTTP消息——http不行（ 无状态、面向响应请求 ） \\
+	\end{CJK}{}
+	\subsubsection{Component Structure}
+	\begin{CJK}{UTF8}{gbsn}
+		HttpComponents 的组件结构如 Figure 5 所示，包含 HttpComponents Core 和 HttpComponents AsyncClient，本次分析的是 HttpComponents Core。\\
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 4cm, width = 12cm]{pics/6_httpcomponents_structure.png}	
+		\caption{Component Structure of HttpsComponents}
+	\end{figure}
+	\subsection{HttpComponents Core}
+	\begin{CJK}{UTF8}{gbsn}
+		\subparagraph{}
+		HttpComponents Core 简称 HttpCore，其实现基本http协议的组件，用于搭建客户端和服务器端的http服务。\\
+		HttpCore 希望在实现基本的http功能的基础上提高性能与平衡性，如 Figure 6 所示：\\
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height = 4cm, width = 16cm]{pics/9_target.png}	
+		\caption{Goal of HttpCore}
+		\end{figure}
+		\begin{figure}[H]
+		%\hspace*{\fill} \\ %空行
+		\centering
+		\includegraphics[height = 10cm, width = 7.5cm]{pics/7_guide_book.png}	
+		\caption{Guide Book}
+		\end{figure}
+		官方文档： httpcore-tutorial http://hc.apache.org/httpcomponents-core-ga/tutorial/pdf/httpcore-tutorial.pdf
+	\end{CJK}{}
+	\subsubsection{Scope of HttpCore}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 4cm, width = 16cm]{pics/8_range.png}	
+		\caption{Scope of HttpCore}
+	\end{figure}
+	\subsubsection{HttpCore API}
+	\begin{CJK}{UTF8}{gbsn}
+		\subparagraph{}
+		HttpCore 中共包含了17个包，其功能如 Figure 9 所示：\\
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height = 9cm, width = 18cm]{pics/10_packages.png}	
+		\caption{Goal of HttpCore}
+		\end{figure}
+		其中所有的类如图所示：\\
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height = 12cm, width = 8cm]{pics/11_all_classes.png}	
+		%\caption{Goal of HttpCore}
+		\end{figure}
+
+		\begin{figure}[H]
+  			\centering
+
+  			\subfigure[]{
+  			  %\label{fig:subfig:onefunction} 
+  			  \includegraphics[scale = 0.3]{pics/11_all_classes.png}
+  			}
+  			\hspace{1.0in} % 两图片之间的距离
+  			\subfigure[]{
+  			  %\label{fig:subfig:twofunction} 
+  			  \includegraphics[scale = 0.3]{pics/12_all_classes.png}
+  			}
+  			%\caption{}
+  			%\label{fig:twopicture} 
+		\end{figure}
+	\end{CJK}{}
 	\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{The Second Part}
