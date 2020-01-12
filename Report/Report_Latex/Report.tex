@@ -553,7 +553,7 @@ public BasicHttpRequest(final Methods method, final URI requestUri) {
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height = 20cm, width = 16cm]{pics/21_BasicHttpResponse.png}	
-		\caption{Methods in BasicHttpRequest}
+		\caption{Methods in BasicHttpResponse}
 	\end{figure}
 
 	\subsubsection{Constructors}
@@ -651,12 +651,12 @@ public BasicHttpResponse(final int code) {
 	\section{Functions}
 	\begin{CJK}{UTF8}{gbsn}
 		Http请求处理的过程包括以下几个步骤：\\
-		建立连接\\
-		接收请求\\
-		处理请求\\
-		访问资源\\
-		构建响应\\
-		发送响应\\
+		\indent 建立连接 (Setting up Connections)\\
+		\indent 接收请求 (Receving Requests)\\
+		\indent 处理请求 (Processing Requests)\\
+		\indent 访问资源 (Accessing Resources)\\
+		\indent 构建响应 (Building Response Message)\\
+		\indent 发送响应 (Sending out Response)\\
 		\hspace*{\fill} \\ %空行
 		整个过程如 Figure 14 所示：
 	\end{CJK}{}
@@ -749,6 +749,82 @@ public BasicHttpResponse(final int code) {
 
 	\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{spacing}{1.0} 
+	\noindent BasicHttpRequest\\
+	\hspace*{\fill} \\ %空行
+	\noindent Request Message\\
+	\noindent method\\
+	host\\
+	path\\
+	requestUri\\
+	\hspace*{\fill} \\ %空行
+	\noindent BasicHttpRequest(method, path)\\
+	\noindent BasicHttpRequest(method, host, path)\\
+	\noindent BasicHttpRequest(method, requestUri)\\
+	\noindent getEntity()\\
+	\noindent setEntity()\\
+	getProtocolVersion()\\
+	getRequestLine()\\
+	toString()\\
+
+	\clearpage
+
+	\noindent BasicHttpResponse\\
+	\hspace*{\fill} \\ %空行
+	Response Message\\
+	code\\
+	catalog\\
+	locale\\
+	version\\
+	reason\\
+	Phrase\\
+	statusline\\
+	reason\\
+	\hspace*{\fill} \\ %空行
+	BasicHttpResponse(code, catalog, locale)\\
+	BasicHttpResponse(code, reasonPhrase)\\
+	BasicHttpResponse(code)\\
+	getEntity()\\
+	getLocale()\\
+	getProtocolVersion()\\
+	getReason(int code)\\
+	getStatusLine() \\
+	setEntity(entity)\\
+	setLocale(locale)\\
+	setReasonPhrase(reason)\\
+	setStatusCode(code) \\
+	setStatusLine(version, code) \\
+	setStatusLine(version, code, reason)\\
+	setStatusLine(statusline)\\
+	toString() \\
+
+	\clearpage
+	HttpMessage\\
+	\noindent BasicHttpResponse\\
+	\hspace*{\fill} \\ %空行
+	name\\
+	header\\
+	value\\
+	params
+	\hspace*{\fill} \\ %空行
+	addHeader(header) \\
+	addHeader(name, value) \\
+	containsHeader(name) \\
+	getAllHeaders() \\
+	getFirstHeader(name)\\
+	getHeaders(name) \\
+	getLastHeader(name) \\
+	getParams() \\
+	getProtocolVersion()\\
+	headerIterator() \\
+	headerIterator(name) \\
+	removeHeader(header)\\
+	removeHeaders(name) \\
+	setHeader(header) \\
+	setHeader(name, value) \\
+	setHeaders(headers) \\
+	setParams(params)\\
+	\end{spacing}
 
 
 \end{document}
