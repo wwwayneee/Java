@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.5)  13 JAN 2020 03:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.5)  13 JAN 2020 06:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -941,7 +941,7 @@ File: c70gbsn.fd 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2015/04/18 4.8.4
 )
-<pics/1_httpcomponents.png, id=143, 202.7575pt x 110.4125pt>
+<pics/1_httpcomponents.png, id=151, 202.7575pt x 110.4125pt>
 File: pics/1_httpcomponents.png Graphic file (type png)
 <use pics/1_httpcomponents.png>
 Package pdftex.def Info: pics/1_httpcomponents.png  used on input line 67.
@@ -1034,7 +1034,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/2_request_format.png, id=295, 502.87875pt x 178.6675pt>
+<pics/2_request_format.png, id=311, 502.87875pt x 178.6675pt>
 File: pics/2_request_format.png Graphic file (type png)
 <use pics/2_request_format.png>
 Package pdftex.def Info: pics/2_request_format.png  used on input line 148.
@@ -1046,7 +1046,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/3_url.png, id=300, 758.835pt x 181.67876pt>
+<pics/3_url.png, id=315, 758.835pt x 181.67876pt>
 File: pics/3_url.png Graphic file (type png)
 <use pics/3_url.png>
 Package pdftex.def Info: pics/3_url.png  used on input line 160.
@@ -1061,13 +1061,13 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/4_9ways_of_http_request.png, id=325, 818.05624pt x 350.30875pt>
+<pics/4_9ways_of_http_request.png, id=340, 818.05624pt x 350.30875pt>
 File: pics/4_9ways_of_http_request.png Graphic file (type png)
 <use pics/4_9ways_of_http_request.png>
 Package pdftex.def Info: pics/4_9ways_of_http_request.png  used on input line 1
 73.
 (pdftex.def)             Requested size: 455.24988pt x 216.24306pt.
-<pics/5_get_post.png, id=326, 882.29625pt x 252.945pt>
+<pics/5_get_post.png, id=341, 882.29625pt x 252.945pt>
 File: pics/5_get_post.png Graphic file (type png)
 <use pics/5_get_post.png>
 Package pdftex.def Info: pics/5_get_post.png  used on input line 178.
@@ -1102,7 +1102,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/6_httpcomponents_structure.png, id=344, 675.52374pt x 206.7725pt>
+<pics/6_httpcomponents_structure.png, id=359, 675.52374pt x 206.7725pt>
 File: pics/6_httpcomponents_structure.png Graphic file (type png)
 <use pics/6_httpcomponents_structure.png>
 Package pdftex.def Info: pics/6_httpcomponents_structure.png  used on input lin
@@ -1120,7 +1120,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/9_target.png, id=357, 913.4125pt x 220.825pt>
+<pics/9_target.png, id=373, 913.4125pt x 220.825pt>
 File: pics/9_target.png Graphic file (type png)
 <use pics/9_target.png>
 Package pdftex.def Info: pics/9_target.png  used on input line 216.
@@ -1130,7 +1130,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--218
 
  []
 
-<pics/7_guide_book.png, id=358, 183.68625pt x 268.00125pt>
+<pics/7_guide_book.png, id=374, 183.68625pt x 268.00125pt>
 File: pics/7_guide_book.png Graphic file (type png)
 <use pics/7_guide_book.png>
 Package pdftex.def Info: pics/7_guide_book.png  used on input line 222.
@@ -1143,22 +1143,22 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/11_all_classes.png, id=374, 604.2575pt x 961.5925pt>
+<pics/11_all_classes.png, id=389, 604.2575pt x 961.5925pt>
 File: pics/11_all_classes.png Graphic file (type png)
 <use pics/11_all_classes.png>
 Package pdftex.def Info: pics/11_all_classes.png  used on input line 240.
 (pdftex.def)             Requested size: 72.26999pt x 115.00462pt.
-<pics/12_all_classes.png, id=375, 643.40375pt x 961.5925pt>
+<pics/12_all_classes.png, id=390, 643.40375pt x 961.5925pt>
 File: pics/12_all_classes.png Graphic file (type png)
 <use pics/12_all_classes.png>
 Package pdftex.def Info: pics/12_all_classes.png  used on input line 247.
 (pdftex.def)             Requested size: 72.26999pt x 108.00575pt.
-<pics/13_all_classes.png, id=376, 643.40375pt x 961.5925pt>
+<pics/13_all_classes.png, id=391, 643.40375pt x 961.5925pt>
 File: pics/13_all_classes.png Graphic file (type png)
 <use pics/13_all_classes.png>
 Package pdftex.def Info: pics/13_all_classes.png  used on input line 255.
 (pdftex.def)             Requested size: 72.26999pt x 108.00575pt.
-<pics/14_all_classes.png, id=377, 736.7525pt x 961.5925pt>
+<pics/14_all_classes.png, id=392, 736.7525pt x 961.5925pt>
 File: pics/14_all_classes.png Graphic file (type png)
 <use pics/14_all_classes.png>
 Package pdftex.def Info: pics/14_all_classes.png  used on input line 262.
@@ -1166,42 +1166,42 @@ Package pdftex.def Info: pics/14_all_classes.png  used on input line 262.
 
 [8 <./pics/11_all_classes.png> <./pics/12_all_classes.png> <./pics/13_all_class
 es.png> <./pics/14_all_classes.png>]
-<pics/15_all_classes.png, id=394, 741.77126pt x 961.5925pt>
+<pics/15_all_classes.png, id=408, 741.77126pt x 961.5925pt>
 File: pics/15_all_classes.png Graphic file (type png)
 <use pics/15_all_classes.png>
 Package pdftex.def Info: pics/15_all_classes.png  used on input line 277.
 (pdftex.def)             Requested size: 72.26999pt x 93.6852pt.
-<pics/16_all_classes.png, id=395, 741.77126pt x 961.5925pt>
+<pics/16_all_classes.png, id=409, 741.77126pt x 961.5925pt>
 File: pics/16_all_classes.png Graphic file (type png)
 <use pics/16_all_classes.png>
 Package pdftex.def Info: pics/16_all_classes.png  used on input line 284.
 (pdftex.def)             Requested size: 72.26999pt x 93.6852pt.
-<pics/17_all_classes.png, id=396, 741.77126pt x 961.5925pt>
+<pics/17_all_classes.png, id=410, 741.77126pt x 961.5925pt>
 File: pics/17_all_classes.png Graphic file (type png)
 <use pics/17_all_classes.png>
 Package pdftex.def Info: pics/17_all_classes.png  used on input line 292.
 (pdftex.def)             Requested size: 72.26999pt x 93.6852pt.
-<pics/18_all_classes.png, id=397, 741.77126pt x 961.5925pt>
+<pics/18_all_classes.png, id=411, 741.77126pt x 961.5925pt>
 File: pics/18_all_classes.png Graphic file (type png)
 <use pics/18_all_classes.png>
 Package pdftex.def Info: pics/18_all_classes.png  used on input line 299.
 (pdftex.def)             Requested size: 72.26999pt x 93.6852pt.
-<pics/19_all_classes.png, id=398, 741.77126pt x 961.5925pt>
+<pics/19_all_classes.png, id=412, 741.77126pt x 961.5925pt>
 File: pics/19_all_classes.png Graphic file (type png)
 <use pics/19_all_classes.png>
 Package pdftex.def Info: pics/19_all_classes.png  used on input line 307.
 (pdftex.def)             Requested size: 72.26999pt x 93.6852pt.
-<pics/20_all_classes.png, id=399, 741.77126pt x 961.5925pt>
+<pics/20_all_classes.png, id=413, 741.77126pt x 961.5925pt>
 File: pics/20_all_classes.png Graphic file (type png)
 <use pics/20_all_classes.png>
 Package pdftex.def Info: pics/20_all_classes.png  used on input line 314.
 (pdftex.def)             Requested size: 72.26999pt x 93.6852pt.
-<pics/21_all_classes.png, id=400, 741.77126pt x 961.5925pt>
+<pics/21_all_classes.png, id=414, 741.77126pt x 961.5925pt>
 File: pics/21_all_classes.png Graphic file (type png)
 <use pics/21_all_classes.png>
 Package pdftex.def Info: pics/21_all_classes.png  used on input line 322.
 (pdftex.def)             Requested size: 72.26999pt x 93.6852pt.
-<pics/22_all_classes.png, id=401, 741.77126pt x 974.64125pt>
+<pics/22_all_classes.png, id=415, 741.77126pt x 974.64125pt>
 File: pics/22_all_classes.png Graphic file (type png)
 <use pics/22_all_classes.png>
 Package pdftex.def Info: pics/22_all_classes.png  used on input line 329.
@@ -1223,7 +1223,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/15_BasicHttpRequest.png, id=423, 831.105pt x 307.1475pt>
+<pics/15_BasicHttpRequest.png, id=437, 831.105pt x 307.1475pt>
 File: pics/15_BasicHttpRequest.png Graphic file (type png)
 <use pics/15_BasicHttpRequest.png>
 Package pdftex.def Info: pics/15_BasicHttpRequest.png  used on input line 349.
@@ -1274,7 +1274,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 381.
-<pics/17_Request_constructors.png, id=425, 745.78625pt x 378.41376pt>
+<pics/17_Request_constructors.png, id=439, 745.78625pt x 378.41376pt>
 File: pics/17_Request_constructors.png Graphic file (type png)
 <use pics/17_Request_constructors.png>
 Package pdftex.def Info: pics/17_Request_constructors.png  used on input line 3
@@ -1290,21 +1290,21 @@ File: UTF8.chr 2015/04/18 4.8.4
 [10
 
  <./pics/15_BasicHttpRequest.png>]
-<pics/18_Request_table_1_4.png, id=442, 631.35875pt x 126.4725pt>
+<pics/18_Request_table_1_4.png, id=456, 631.35875pt x 126.4725pt>
 File: pics/18_Request_table_1_4.png Graphic file (type png)
 <use pics/18_Request_table_1_4.png>
 Package pdftex.def Info: pics/18_Request_table_1_4.png  used on input line 418.
 
 (pdftex.def)             Requested size: 512.17812pt x 99.58603pt.
  [11 <./pics/17_Request_constructors.png>]
-<pics/19_Request_table_2_5.png, id=468, 631.35875pt x 156.585pt>
+<pics/19_Request_table_2_5.png, id=482, 631.35875pt x 156.585pt>
 File: pics/19_Request_table_2_5.png Graphic file (type png)
 <use pics/19_Request_table_2_5.png>
 Package pdftex.def Info: pics/19_Request_table_2_5.png  used on input line 443.
 
 (pdftex.def)             Requested size: 512.17812pt x 99.58806pt.
 [12 <./pics/18_Request_table_1_4.png> <./pics/19_Request_table_2_5.png>]
-<pics/20_Request_table_3_6.png, id=499, 631.35875pt x 127.47626pt>
+<pics/20_Request_table_3_6.png, id=513, 631.35875pt x 127.47626pt>
 File: pics/20_Request_table_3_6.png Graphic file (type png)
 <use pics/20_Request_table_3_6.png>
 Package pdftex.def Info: pics/20_Request_table_3_6.png  used on input line 465.
@@ -1339,7 +1339,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 544--546
 
  []
 
-<pics/33_BasicHttpRequest_UML.JPG, id=559, 1897.0875pt x 1375.1375pt>
+<pics/33_BasicHttpRequest_UML.JPG, id=574, 1897.0875pt x 1375.1375pt>
 File: pics/33_BasicHttpRequest_UML.JPG Graphic file (type jpg)
 <use pics/33_BasicHttpRequest_UML.JPG>
 Package pdftex.def Info: pics/33_BasicHttpRequest_UML.JPG  used on input line 5
@@ -1358,13 +1358,13 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/21_BasicHttpResponse.png, id=581, 369.38pt x 509.905pt>
+<pics/21_BasicHttpResponse.png, id=595, 369.38pt x 509.905pt>
 File: pics/21_BasicHttpResponse.png Graphic file (type png)
 <use pics/21_BasicHttpResponse.png>
 Package pdftex.def Info: pics/21_BasicHttpResponse.png  used on input line 569.
 
 (pdftex.def)             Requested size: 426.79584pt x 512.17564pt.
-<pics/22_Response_constructors.png, id=582, 596.2275pt x 201.75375pt>
+<pics/22_Response_constructors.png, id=596, 596.2275pt x 201.75375pt>
 File: pics/22_Response_constructors.png Graphic file (type png)
 <use pics/22_Response_constructors.png>
 Package pdftex.def Info: pics/22_Response_constructors.png  used on input line 
@@ -1384,7 +1384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
-<pics/23_Response_table_1.png, id=590, 645.41125pt x 157.58875pt>
+<pics/23_Response_table_1.png, id=604, 645.41125pt x 157.58875pt>
 File: pics/23_Response_table_1.png Graphic file (type png)
 <use pics/23_Response_table_1.png>
 Package pdftex.def Info: pics/23_Response_table_1.png  used on input line 610.
@@ -1396,12 +1396,12 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/24_status_code.png, id=618, 493.845pt x 197.73875pt>
+<pics/24_status_code.png, id=632, 493.845pt x 197.73875pt>
 File: pics/24_status_code.png Graphic file (type png)
 <use pics/24_status_code.png>
 Package pdftex.def Info: pics/24_status_code.png  used on input line 620.
 (pdftex.def)             Requested size: 426.78574pt x 156.4925pt.
-<pics/25_Response_table_2.png, id=619, 645.41125pt x 126.4725pt>
+<pics/25_Response_table_2.png, id=633, 645.41125pt x 126.4725pt>
 File: pics/25_Response_table_2.png Graphic file (type png)
 <use pics/25_Response_table_2.png>
 Package pdftex.def Info: pics/25_Response_table_2.png  used on input line 641.
@@ -1409,7 +1409,7 @@ Package pdftex.def Info: pics/25_Response_table_2.png  used on input line 641.
 
 [18 <./pics/23_Response_table_1.png> <./pics/24_status_code.png> <./pics/25_Res
 ponse_table_2.png>]
-<pics/26_Response_table_3.png, id=643, 645.41125pt x 97.36375pt>
+<pics/26_Response_table_3.png, id=657, 645.41125pt x 97.36375pt>
 File: pics/26_Response_table_3.png Graphic file (type png)
 <use pics/26_Response_table_3.png>
 Package pdftex.def Info: pics/26_Response_table_3.png  used on input line 661.
@@ -1421,7 +1421,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/32_BasicHttpResponse_UML.JPG, id=644, 1441.385pt x 1575.8875pt>
+<pics/32_BasicHttpResponse_UML.JPG, id=658, 1441.385pt x 1575.8875pt>
 File: pics/32_BasicHttpResponse_UML.JPG Graphic file (type jpg)
 <use pics/32_BasicHttpResponse_UML.JPG>
 Package pdftex.def Info: pics/32_BasicHttpResponse_UML.JPG  used on input line 
@@ -1435,7 +1435,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/31_Classes_UML.JPG, id=664, 1588.93625pt x 2571.6075pt>
+<pics/31_Classes_UML.JPG, id=678, 1588.93625pt x 2571.6075pt>
 File: pics/31_Classes_UML.JPG Graphic file (type jpg)
 <use pics/31_Classes_UML.JPG>
 Package pdftex.def Info: pics/31_Classes_UML.JPG  used on input line 679.
@@ -1474,7 +1474,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/36_Interfaces.jpg, id=674, 2039.62pt x 2035.605pt>
+<pics/36_Interfaces.jpg, id=687, 2039.62pt x 2035.605pt>
 File: pics/36_Interfaces.jpg Graphic file (type jpg)
 <use pics/36_Interfaces.jpg>
 Package pdftex.def Info: pics/36_Interfaces.jpg  used on input line 713.
@@ -1494,10 +1494,6 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-Underfull \hbox (badness 10000) in paragraph at lines 722--728
-
- []
-
 [22 <./pics/36_Interfaces.jpg>]
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
@@ -1505,7 +1501,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/35_Design_Patterns.png, id=688, 1578.89874pt x 856.19875pt>
+<pics/35_Design_Patterns.png, id=701, 1578.89874pt x 856.19875pt>
 File: pics/35_Design_Patterns.png Graphic file (type png)
 <use pics/35_Design_Patterns.png>
 Package pdftex.def Info: pics/35_Design_Patterns.png  used on input line 736.
@@ -1540,16 +1536,35 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-[25] (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/27_http_procedure.png, id=745, 588.1975pt x 408.52625pt>
+<pics/37_Template.jpg, id=748, 2001.4775pt x 2360.82pt>
+File: pics/37_Template.jpg Graphic file (type jpg)
+<use pics/37_Template.jpg>
+Package pdftex.def Info: pics/37_Template.jpg  used on input line 806.
+(pdftex.def)             Requested size: 256.04776pt x 284.51097pt.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+[25 <./pics/37_Template.jpg>]
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+<pics/27_http_procedure.png, id=759, 588.1975pt x 408.52625pt>
 File: pics/27_http_procedure.png Graphic file (type png)
 <use pics/27_http_procedure.png>
-Package pdftex.def Info: pics/27_http_procedure.png  used on input line 814.
+Package pdftex.def Info: pics/27_http_procedure.png  used on input line 829.
 (pdftex.def)             Requested size: 455.24701pt x 312.99532pt.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -1567,10 +1582,10 @@ File: UTF8.chr 2015/04/18 4.8.4
 [26
 
  <./pics/27_http_procedure.png>]
-<pics/28_request_format.png, id=752, 502.87875pt x 178.6675pt>
+<pics/28_request_format.png, id=766, 502.87875pt x 178.6675pt>
 File: pics/28_request_format.png Graphic file (type png)
 <use pics/28_request_format.png>
-Package pdftex.def Info: pics/28_request_format.png  used on input line 833.
+Package pdftex.def Info: pics/28_request_format.png  used on input line 848.
 (pdftex.def)             Requested size: 398.33644pt x 142.2717pt.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -1579,7 +1594,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-Overfull \hbox (2.63809pt too wide) in paragraph at lines 840--844
+Overfull \hbox (2.63809pt too wide) in paragraph at lines 855--859
 \C70/gbsn/m/n/10/ff ^^H \C70/gbsn/m/n/10/4e K \C70/gbsn/m/n/10/52 M \C70/gbsn/m
 /n/10/8b ô \C70/gbsn/m/n/10/8f Ç \C70/gbsn/m/n/10/ff ^^L\OT1/cmr/m/n/10 http\C7
 0/gbsn/m/n/10/5e 8 \C70/gbsn/m/n/10/75 ( \C70/gbsn/m/n/10/76 „ \C70/gbsn/m/n/10
@@ -1597,23 +1612,23 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-<pics/29_first_access.png, id=753, 1686.3pt x 925.4575pt>
+<pics/29_first_access.png, id=767, 1686.3pt x 925.4575pt>
 File: pics/29_first_access.png Graphic file (type png)
 <use pics/29_first_access.png>
-Package pdftex.def Info: pics/29_first_access.png  used on input line 879.
+Package pdftex.def Info: pics/29_first_access.png  used on input line 894.
 (pdftex.def)             Requested size: 370.98715pt x 203.60127pt.
 
-Overfull \hbox (35.11938pt too wide) in paragraph at lines 879--880
+Overfull \hbox (35.11938pt too wide) in paragraph at lines 894--895
  [][] 
  []
 
-<pics/30_second_access.png, id=754, 1686.3pt x 925.4575pt>
+<pics/30_second_access.png, id=768, 1686.3pt x 925.4575pt>
 File: pics/30_second_access.png Graphic file (type png)
 <use pics/30_second_access.png>
-Package pdftex.def Info: pics/30_second_access.png  used on input line 886.
+Package pdftex.def Info: pics/30_second_access.png  used on input line 901.
 (pdftex.def)             Requested size: 370.98715pt x 203.60127pt.
 
-Overfull \hbox (35.11938pt too wide) in paragraph at lines 886--887
+Overfull \hbox (35.11938pt too wide) in paragraph at lines 901--902
  [][] 
  []
 
@@ -1627,24 +1642,34 @@ File: UTF8.chr 2015/04/18 4.8.4
 )
 [29
 
+] (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1028.
+
+[30
+
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 983.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 983.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1028.
  (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 983.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 983.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1028.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1028.
+
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 2D4CDA7AF4B8654015F97ED41F50D0A0;2342.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 983.
+(rerunfilecheck)             Checksum: 5AED7BA277DEC15C556442126D5532A2;2464.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1028.
  ) 
 Here is how much of TeX's memory you used:
- 14846 strings out of 492649
- 220051 string characters out of 6129623
- 402595 words of memory out of 5000000
- 17740 multiletter control sequences out of 15000+600000
- 27964 words of font info for 103 fonts, out of 8000000 for 9000
+ 14960 strings out of 492649
+ 222289 string characters out of 6129623
+ 402586 words of memory out of 5000000
+ 17836 multiletter control sequences out of 15000+600000
+ 28435 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,42p,668b,1893s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,42p,863b,1893s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1703,28 +1728,30 @@ nu80.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu81.p
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu82.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu83.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu86.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/arphic/gbsnu/gbsnu8e.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arp
-hic/gbsnu/gbsnu8f.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gb
-snu/gbsnu90.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
-snu91.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/arphic/gbsnu/gbsnu9e.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/arphic/gbsnu/gbsnuff.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1000.pfb>
-Output written on Report.pdf (29 pages, 8912231 bytes).
+live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu87.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/arphic/gbsnu/gbsnu8a.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/arphic/gbsnu/gbsnu8c.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arp
+hic/gbsnu/gbsnu8d.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gb
+snu/gbsnu8e.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
+snu8f.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu91.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/arphic/gbsnu/gbsnu9e.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/ar
+phic/gbsnu/gbsnuff.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/c
+m-super/sfrm1000.pfb>
+Output written on Report.pdf (30 pages, 9594954 bytes).
 PDF statistics:
- 1091 PDF objects out of 1200 (max. 8388607)
- 824 compressed objects within 9 object streams
- 313 named destinations out of 1000 (max. 500000)
- 757 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1117 PDF objects out of 1200 (max. 8388607)
+ 844 compressed objects within 9 object streams
+ 317 named destinations out of 1000 (max. 500000)
+ 786 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -76,7 +76,7 @@
 	\section{Preface}
 	\subparagraph{}
 	\begin{CJK}{UTF8}{gbsn}
-		由于先前的课程中并没有讲过关于网络与信息方面的知识，笔者之也并没有接触过。而这次的选题是HttpComponents，涉及到大量的网络方面的知识，所以在准备这篇报告的第一阶段笔者的主要精力是放在研究一些基本的网络方面的知识。要讲到HttpComponents，就先要讲一下关于http的各种知识。
+		\indent \indent 这是一片关于 HttpConponents Core 的分析报告，本报告将三个部分融合在了一起，没有进行特别的区分。报告中包括关于相关网络知识的介绍（之前没学过，需要预习一下），关于 HttpConponents Core 的介绍，重点功能讲解（Http 请求处理），面向对象思想在工程中的具体应用，关于重点功能的设计思想，设计模式分析（分析了迭代器模式以及模版方法模式），关于面向对象设计原则的分析（SOLID）等。
 	\end{CJK}{}
 	\clearpage
 	
@@ -700,7 +700,7 @@ public BasicHttpResponse(final int code) {
 	\subsubsection{Open Closed Principle}
 	\begin{CJK}{UTF8}{gbsn}
 		\indent \indent 开放封闭（OCP）要求软件实体是对扩展开放但是对修改封闭，如此在有新的需求或变更（比如要求 HttpComponents 组件实现新的功能）的时候仅需对现有代码进行扩展，而无需对类进行修改。
-		\indent 在 HttpComponents Core 中，为了实现 http 的9种请求方法需要实现多种类，以和请求处理有关的 Request 和 Response 为例，通过对于 HttpRequest 和 HttpResponse 类的继承对其进行扩展而不修改其本身，由此有利于程序的封装，降低模块之间的耦合度。
+		\indent 在 HttpComponents Core 中，为了实现 http 的9种请求方法需要实现多种类，以和请求处理有关的 Request 和 Response 为例，通过对于 HttpRequest 和 HttpResponse 类的继承对其进行扩展而不修改其本身，由此有利于程序的封装，降低模块之间的耦合度。另外在后面的设计模式分析中的模版设计模式就很好地体现了开放封闭原则，抽象类提供模版，其子类通过对其的扩展实现具体功能。
 	\end{CJK}{}
 
 	\subsubsection{Interface Segregation Principle}
@@ -720,16 +720,16 @@ public BasicHttpResponse(final int code) {
 	\subsubsection{Dependency Inversion Principle}
 	\begin{CJK}{UTF8}{gbsn}
 		\indent \indent 依赖倒转（DIP）要求在程序设计时依赖于抽象（实现依赖于抽象），而不是依赖于具体细节。“倒转”是指与面向过程程序设计相比较，此时由于不同的实现会因不同的细节而不同所以需要依赖细节（高层依赖低层），故此时一旦低层的细节发生变动，高层的实现也需要变动，程序的维护成本就会很高。\\
-		\indent 在面向对象编程中，由于抽象一般不会改变，不论实现的细节如何变动，由于其所依赖的抽象不用改变，故客户端序也就无需修改，从而降低客户与实现细节之间的耦合度。\\
+		\indent 在面向对象编程中，由于抽象部分一般不会改变，不论实现的细节如何变动，由于其所依赖的抽象不用改变，故客户端序也就无需修改，从而降低客户与实现细节之间的耦合度，使得程序的维护成本降低。\\
 		%//here
-		%在 HttpComponents Core 中
+		\indent 在 HttpComponents Core 中，尽管实现细节多种多样，但是都已经被抽象进接口中，类通过继承接口实现依赖倒转（根据接口隔离原则，不同的类拥有独立的接口）。
 		%\indent 
 	\end{CJK}{}
 
 	\clearpage
 	\subsection{Design Patterns}
 	\begin{CJK}{UTF8}{gbsn}
-		\indent \indent 在面向对象程序设计中的设计模式非常多，这里选取行为模式中的迭代器模式进行简要分析。
+		\indent \indent 在面向对象程序设计中的设计模式非常多，这里选取行为模式中的迭代器模式和模版方法模式进行简要分析。
 	\end{CJK}{}
 	\begin{figure}[H]
 		\centering
@@ -795,6 +795,21 @@ public AsyncRequestBuilder removeHeaders(final String name) {
 		\indent \indent 通过 Iterator 实现对 header 的遍历，进而实现删除 header。\\
 		\indent 通过迭代器模式可以在不关注容器内部数据结构的情况下访问容器数据，体现了单一职责的原则。
 	\end{CJK}{}
+
+	\subsubsection{Template Pattern}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 模版方法模式中通过一个抽象类（AbstractClass）公开定义了执行它的方法的模板，它的子类可以按需要重写方法实现，但调用将以抽象类中定义的方式进行。即定义一个操作中的算法的骨架，同时将一些步骤延迟到其子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤，这也是开放封闭原则的一种体现。\\
+		\indent 在 HttpComponents Core 中，抽象类 AbstractHttpMessage 中定义了各种关于消息报头的操作（addHeader(), containsHeader(), getAllHeaders(), getFirstHeader(), getHeaders(), getLastHeader(), setHeader(), setHeaders()等），而作为其具体的实现类 BasicHttpRequest 和 BasicHttpResponse 中对上述方法进行了重写。
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 10cm, width = 9cm]{pics/37_Template.jpg}	
+		%\caption{Http Request Processing}
+	\end{figure}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 模版方法模式中封装了基本的方法，在子类中实现了扩展，体现了开放封闭原则，行为由抽象父类控制，具体的子类来实现，便于程序的维护。
+	\end{CJK}{}
+
 	\clearpage
 	\section{Functions}
 	\begin{CJK}{UTF8}{gbsn}
@@ -837,7 +852,7 @@ public AsyncRequestBuilder removeHeaders(final String name) {
 	\subsection{Processing Requests}
 	\begin{CJK}{UTF8}{gbsn}
 		\subparagraph{}
-		处理请求：服务器对请求报文进行解析，获取请求的资源及请求方法等相关信息 根据方法，资源，首部和可选的主体部分对请求进行处理。\\
+		处理请求：服务器对请求报文进行解析，获取请求的资源及请求方法等相关信息根据方法，资源，首部和可选的主体部分对请求进行处理。\\
 		（之前说过，http常用的请求方法：GET 、 POST 、 PUT 、 DELETE 、 PATCH、HEAD、OPTIONS、TRACE、\\
 		CONNECT）
 	\end{CJK}{}
@@ -899,6 +914,11 @@ public AsyncRequestBuilder removeHeaders(final String name) {
 
 	\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Conclusion}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 以上即为本次关于 HttpComponents Core 的分析报告。在准备这次分析报告的过程中确实学到了不少东西，之前没有接触过关于网络的知识，关于 http 的相关概念也都是现学，感觉实际上并不是特别难。关于面向对象程序设计方面，从本学期开始时的分不清面向过程和面向对象到现在稍微有点入门能够简单分析一个大型工程的结构。由于之前从未学习过 Java 语言，故目前还没有能力对整个工程做更细致的分析（这也就涉及到了算法本身，和面向对象程序设计相差甚远）。当然在看代码的过程中对于 Java 语法和理解规模较大的项目工程也掌握了不少，HttpComponents Core 应该是我在 Github 上面 fork 的第一个别人的项目。\\
+		\indent 由于时间有限，在分析 HttpComponents Core 时也并没有将其中所有的类都拿出来细看，重点是针对 HttpRequest 和 HttpResponse 进行分析，还有不少内容没有照顾到。等到下学期学习了计算机网络之后对于整个工程应该就会有更深的理解。
+	\end{CJK}{}
 	\begin{comment}
 	\begin{spacing}{1.0} 
 	\noindent BasicHttpRequest\\
@@ -979,5 +999,30 @@ public AsyncRequestBuilder removeHeaders(final String name) {
 	\end{spacing}
 	\end{comment}
 
+	\begin{comment}
+	\clearpage
+	\begin{spacing}{1.0} 
+	\noindent AbstractHttpMessage\\
+	\hspace*{\fill} \\ %空行
+	-header: Header\\
+	-headers: Header[]\\
+	-name: String\\
+	-value: String\\
+	\hspace*{\fill} \\ %空行
+	+addHeader(Header header): void\\
+	+addHeader(String name, String value): void\\
+	+containsHeader(String name): boolean\\
+	+getAllHeaders(): Header[]\\
+	+getFirstHeader(String name): Header\\
+	+getHeaders(String name): Header[]\\
+	+getLastHeader(String name): Header\\
+	+headerIterator(): HeaderIterator\\
+	+headerIterator(String name): HeaderIterator\\
+	+removeHeader(Header header): void\\
+	+removeHeaders(String name): void\\
+	+setHeader(String name, String value): void\\
+	+setHeaders(Header[] headers): void\\
+	\end{spacing}
+	\end{comment}
 
 \end{document}

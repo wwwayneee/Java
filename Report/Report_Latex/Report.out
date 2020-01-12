@@ -26,9 +26,11 @@
 \BOOKMARK [3][-]{subsubsection.3.6.5}{Dependency Inversion Principle}{subsection.3.6}% 26
 \BOOKMARK [2][-]{subsection.3.7}{Design Patterns}{section.3}% 27
 \BOOKMARK [3][-]{subsubsection.3.7.1}{Iterator Pattern}{subsection.3.7}% 28
-\BOOKMARK [1][-]{section.4}{Functions}{}% 29
-\BOOKMARK [2][-]{subsection.4.1}{Setting up Connections}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.2}{Receving Requests}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.3}{Processing Requests}{section.4}% 32
-\BOOKMARK [2][-]{subsection.4.4}{Accessing Resources}{section.4}% 33
-\BOOKMARK [2][-]{subsection.4.5}{Building Response Message}{section.4}% 34
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Template Pattern}{subsection.3.7}% 29
+\BOOKMARK [1][-]{section.4}{Functions}{}% 30
+\BOOKMARK [2][-]{subsection.4.1}{Setting up Connections}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.2}{Receving Requests}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.3}{Processing Requests}{section.4}% 33
+\BOOKMARK [2][-]{subsection.4.4}{Accessing Resources}{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.5}{Building Response Message}{section.4}% 35
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 36
