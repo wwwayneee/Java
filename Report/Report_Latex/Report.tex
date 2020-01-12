@@ -700,11 +700,31 @@ public BasicHttpResponse(final int code) {
 	\subsubsection{Open Closed Principle}
 	\begin{CJK}{UTF8}{gbsn}
 		\indent \indent 开放封闭（OCP）要求软件实体是对扩展开放但是对修改封闭，如此在有新的需求或变更（比如要求 HttpComponents 组件实现新的功能）的时候仅需对现有代码进行扩展，而无需对类进行修改。
-
+		\indent 在 HttpComponents Core 中，为了实现 http 的9种请求方法需要实现多种类，以和请求处理有关的 Request 和 Response 为例，通过对于 HttpRequest 和 HttpResponse 类的继承对其进行扩展而不修改其本身，由此有利于程序的封装，降低模块之间的耦合度。
 	\end{CJK}{}
 
 	\subsubsection{Interface Segregation Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 接口隔离（ISP）要求给每个模块尽可能使用单一专用的接口，而不是共用一个包含很多方法的臃肿的借口。每个模块都有对应的接口，该接口中仅含其需要用到的方法，不用的不含。\\
+		\indent 在 HttpComponents Core 中，以 对于主要的功能都实现了接口隔离，每个类由自己单独的接口，接口之间通过继承关系组织：
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 9cm, width = 8.5cm]{pics/36_Interfaces.jpg}	
+		%\caption{Http Request Processing}
+	\end{figure}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 通过接口隔离同样实现了降低耦合度，各个类之间的联系被进一步削弱，同时对于每个类使用独立的接口使得后期代码维护成本降低，如果需要对于某个类添加或删去某些操作仅需修改其对应独立的接口，而不用改变其他类的接口，也提高了程序的稳定性。
+	\end{CJK}{}
+
 	\subsubsection{Dependency Inversion Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 依赖倒转（DIP）要求在程序设计时依赖于抽象（实现依赖于抽象），而不是依赖于具体细节。“倒转”是指与面向过程程序设计相比较，此时由于不同的实现会因不同的细节而不同所以需要依赖细节（高层依赖低层），故此时一旦低层的细节发生变动，高层的实现也需要变动，程序的维护成本就会很高。\\
+		\indent 在面向对象编程中，由于抽象一般不会改变，不论实现的细节如何变动，由于其所依赖的抽象不用改变，故客户端序也就无需修改，从而降低客户与实现细节之间的耦合度。\\
+		%//here
+		%在 HttpComponents Core 中
+		%\indent 
+	\end{CJK}{}
 
 	\clearpage
 	\subsection{Design Patterns}
@@ -754,9 +774,27 @@ public Header next() throws NoSuchElementException {
 }
 	\end{lstlisting}
 	\begin{CJK}{UTF8}{gbsn}
-		\indent \indent  其中 hasNext() 方法判断在迭代中是否还有其他 header，next() 则返回下一个 header()。在迭代器中先调用 hasNext() 方法通过索引值来反应迭代中是否还有其他 header，之后调用 next() 的时候检查索引值，若为合法数值就返回对应 header。
+		\indent \indent  其中 hasNext() 方法判断在迭代中是否还有其他 header，next() 则返回下一个 header()。在迭代器中先调用 hasNext() 方法通过索引值来反应迭代中是否还有其他 header，之后调用 next() 的时候检查索引值，若为合法数值就返回对应 header。\\
+		\indent 该迭代器在 AsyncRequestBuilder.java 中被使用
 	\end{CJK}{}
-
+	\begin{lstlisting}[language={java}]
+public AsyncRequestBuilder removeHeaders(final String name) {
+    if (name == null || headerGroup == null) {
+        return this;
+    }
+    for (final Iterator<Header> i = headerGroup.headerIterator(); i.hasNext(); ) {
+        final Header header = i.next();
+        if (name.equalsIgnoreCase(header.getName())) {
+            i.remove();
+        }
+    }
+    return this;
+}
+	\end{lstlisting}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 通过 Iterator 实现对 header 的遍历，进而实现删除 header。\\
+		\indent 通过迭代器模式可以在不关注容器内部数据结构的情况下访问容器数据，体现了单一职责的原则。
+	\end{CJK}{}
 	\clearpage
 	\section{Functions}
 	\begin{CJK}{UTF8}{gbsn}
