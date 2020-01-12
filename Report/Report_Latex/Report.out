@@ -18,9 +18,17 @@
 \BOOKMARK [2][-]{subsection.3.5}{BasicHttpResponse}{section.3}% 18
 \BOOKMARK [3][-]{subsubsection.3.5.1}{Methods in BasicHttpResponse}{subsection.3.5}% 19
 \BOOKMARK [3][-]{subsubsection.3.5.2}{Constructors}{subsection.3.5}% 20
-\BOOKMARK [1][-]{section.4}{Functions}{}% 21
-\BOOKMARK [2][-]{subsection.4.1}{Setting up Connections}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.2}{Receving Requests}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.3}{Processing Requests}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.4}{Accessing Resources}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.5}{Building Response Message}{section.4}% 26
+\BOOKMARK [2][-]{subsection.3.6}{Design Principles}{section.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Liskov Substitution Principle}{subsection.3.6}% 22
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Single Responsibility Principle}{subsection.3.6}% 23
+\BOOKMARK [3][-]{subsubsection.3.6.3}{Open Closed Principle}{subsection.3.6}% 24
+\BOOKMARK [3][-]{subsubsection.3.6.4}{Interface Segregation Principle}{subsection.3.6}% 25
+\BOOKMARK [3][-]{subsubsection.3.6.5}{Dependency Inversion Principle}{subsection.3.6}% 26
+\BOOKMARK [2][-]{subsection.3.7}{Design Patterns}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Iterator Pattern}{subsection.3.7}% 28
+\BOOKMARK [1][-]{section.4}{Functions}{}% 29
+\BOOKMARK [2][-]{subsection.4.1}{Setting up Connections}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.2}{Receving Requests}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.3}{Processing Requests}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.4}{Accessing Resources}{section.4}% 33
+\BOOKMARK [2][-]{subsection.4.5}{Building Response Message}{section.4}% 34

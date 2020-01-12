@@ -331,6 +331,8 @@
 		\caption{Classes of HttpCore}
 	\end{figure}
 
+	\clearpage
+
 	\subsection{BasicHttpRequest}
 	\begin{CJK}{UTF8}{gbsn}
 		路径：org.apache.http.message\\
@@ -383,13 +385,13 @@ public ClassName() {
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 8cm, width = 13cm]{pics/17_Request_constructors.png}	
+		\includegraphics[height = 7cm, width = 13cm]{pics/17_Request_constructors.png}	
 		\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 	\begin{CJK}{UTF8}{gbsn}
 		接下来分别介绍 BasicHttpRequest 中的构造器
 	\end{CJK}{}
-	\clearpage
+	%\clearpage
 	%\renewcommand{\baselinestretch}{1.0}
 	\begin{lstlisting}[language={java}]
 /**
@@ -512,7 +514,7 @@ public BasicHttpRequest(final Methods method, final HttpHost host, final String 
 	\end{lstlisting}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 3.5cm, width = 18cm]{pics/19_Request_table_2_5.png}	
+		\includegraphics[height = 3.8cm, width = 18cm]{pics/19_Request_table_2_5.png}	
 		%\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 
@@ -538,6 +540,18 @@ public BasicHttpRequest(final Methods method, final URI requestUri) {
 		%\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 根据上面的分析得到 BasicHttpRequest 的类图如下：\\
+	\end{CJK}{}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 7.5cm, width = 9.5cm]{pics/33_BasicHttpRequest_UML.JPG}	
+		%\caption{Constructors in BasicHttpRequest}
+	\end{figure}
+
+	\clearpage
+
 	\subsection{BasicHttpResponse}
 	\begin{CJK}{UTF8}{gbsn}
 		路径：org.apache.http.message\\
@@ -552,14 +566,14 @@ public BasicHttpRequest(final Methods method, final URI requestUri) {
 	\end{CJK}{}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 20cm, width = 16cm]{pics/21_BasicHttpResponse.png}	
+		\includegraphics[height = 18cm, width = 15cm]{pics/21_BasicHttpResponse.png}	
 		\caption{Methods in BasicHttpResponse}
 	\end{figure}
 
 	\subsubsection{Constructors}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 5cm, width = 14cm]{pics/22_Response_constructors.png}	
+		\includegraphics[height = 4.5cm, width = 13cm]{pics/22_Response_constructors.png}	
 		\caption{Constructors in BasicHttpResponse}
 	\end{figure}
 
@@ -648,6 +662,102 @@ public BasicHttpResponse(final int code) {
 		%\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 根据上面的分析得到 BasicHttpResponse 的类图如下：
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 12cm, width = 12cm]{pics/32_BasicHttpResponse_UML.JPG}	
+		%\caption{Constructors in BasicHttpRequest}
+	\end{figure}
+	\clearpage
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 经过上面的分析得到UML图（部分）：
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 23cm, width = 17cm]{pics/31_Classes_UML.JPG}	
+		%\caption{Constructors in BasicHttpRequest}
+	\end{figure}
+
+	\clearpage
+	\subsection{Design Principles}
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 下面简述一下面向对象程序设计的五大原则（SOLID）在 HttpComponents Core 中的体现。
+	\end{CJK}{}
+	\subsubsection{Liskov Substitution Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 里氏替换（LSP）是为了实现面向对象程序设计中的继承和复用，要求子类可以替换掉父类，而原工程的功能不受影响，近二十年前父类被复用。\\
+		\indent 以 BasicHttpResponse 类为例，其是 HeaderGroup 的子类，此时如果使用该父类，则修改方法一定也适用于子类 BasicHttpResponse。
+	\end{CJK}{}
+
+	\subsubsection{Single Responsibility Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 单一职责（SRP）是为了实现类良好的复用性而进行的解耦，要求一个类只完成一个功能，反之如果一个类耦合了过多指责则其中一个职责出现问题该类中剩下其他的职责也将会受到影响，进而引起连锁反应。单一职责保障了整个工程的高内聚低耦合。\\
+		\indent 很明显，在 BasicHttpRequest 和 BasicHttpResponse 两个类中的职责就是创建请求和创建响应。同时，遍历 HttpComponents Core 中的所有的类，发现几乎所有类都符合单一职责的原则。另外之后会介绍的迭代器模式也是单一职责的体现。
+	\end{CJK}{}
+
+	\subsubsection{Open Closed Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 开放封闭（OCP）要求软件实体是对扩展开放但是对修改封闭，如此在有新的需求或变更（比如要求 HttpComponents 组件实现新的功能）的时候仅需对现有代码进行扩展，而无需对类进行修改。
+
+	\end{CJK}{}
+
+	\subsubsection{Interface Segregation Principle}
+	\subsubsection{Dependency Inversion Principle}
+
+	\clearpage
+	\subsection{Design Patterns}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 在面向对象程序设计中的设计模式非常多，这里选取行为模式中的迭代器模式进行简要分析。
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 7cm, width = 13.5cm]{pics/35_Design_Patterns.png}	
+		%\caption{Http Request Processing}
+	\end{figure}
+	\subsubsection{Iterator Pattern}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 迭代器模式就是希望用户通过特定的接口访问容器内的数据而不需要了解容器内部的数据结构，进而降低容器之间的耦合度。由于访问一个容器内部的数据就必须在其中实现对应的方法，此时只能给将访问数据的方法耦和进容器接口中，而若没有实现则需要额外地修改容器方法。因此迭代器模式就将处理容器数据的逻辑就和容器本身的实现解耦。在访问容器数据时只需要使用容器提供的 Iterator 对象，而容器的内部实现以及数据结构对于使用者来说的不可见的。\\
+		\indent 迭代器的使用场景：\\
+		\indent \indent 1. 需要访问的对象的数据的组织结构不是关注的重点时\\
+		\indent \indent 2. 需要遍历多个聚集结构从而需要统一接口时\\
+		\indent \indent 3. 为保证聚集结构本身数据安全而修改只针对副本时\\
+		\indent 在以上场景下使用迭代器似乎是最有效的方法，将数据的行为统一提取出来封装在迭代器中并通过迭代器来实现数据的遍历。同时这也是面向对象程序设计原则中的单一职责的体现。\\
+		\indent 这里我们关注 BasicHeaderIterator 中的 next() 方法和 hasNext() 方法（BasicHeaderIterator 中进行了 重写），由这两个方法实现遍历整个容器数据。迭代器在 HttpComponents Core 中很常见，凡事在上述场景下的情况都需要用到迭代器。
+	\end{CJK}{}
+
+	\begin{lstlisting}[language={java}]
+@Override
+public boolean hasNext() {
+    return this.currentIndex >= 0;
+}
+
+/**
+ * Obtains the next header from this iteration.
+ *
+ * @return  the next header in this iteration
+ *
+ * @throws NoSuchElementException   if there are no more headers
+ */
+@Override
+public Header next() throws NoSuchElementException {
+
+    final int current = this.currentIndex;
+    if (current < 0) {
+        throw new NoSuchElementException("Iteration already finished.");
+    }
+
+    this.currentIndex = findNext(current);
+
+    return this.allHeaders[current];
+}
+	\end{lstlisting}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent  其中 hasNext() 方法判断在迭代中是否还有其他 header，next() 则返回下一个 header()。在迭代器中先调用 hasNext() 方法通过索引值来反应迭代中是否还有其他 header，之后调用 next() 的时候检查索引值，若为合法数值就返回对应 header。
+	\end{CJK}{}
+
+	\clearpage
 	\section{Functions}
 	\begin{CJK}{UTF8}{gbsn}
 		Http请求处理的过程包括以下几个步骤：\\
@@ -675,7 +785,8 @@ public BasicHttpResponse(final int code) {
 
 	\subsection{Receving Requests}
 	\begin{CJK}{UTF8}{gbsn}
-		HTTP请求报文：由请求行（request line）、请求头部（header）、空行和请求数据4个部分组成，如 Figure 15 所示。\\ 
+		\indent 客户端对请求的发送体现了JavaEE各个层次模型中的传输对象模式(Transfer Object Pattern)，传输的报文是拆分为四部分组成的。\\
+		\noindent HTTP请求报文：由请求行（request line）、请求头部（header）、空行和请求数据4个部分组成，如 Figure 15 所示。\\ 
 		接收请求：接收客户端请求报文中对某资源的请求。
 	\end{CJK}{}
 
@@ -697,6 +808,7 @@ public BasicHttpResponse(final int code) {
 	\indent 
 	\begin{CJK}{UTF8}{gbsn}
 		%\subparagraph{}
+		\indent 服务器对于资源的访问体现了JavaEE各个层次模型中的服务器定位模式(Service Locater Pattern)，充分利用了缓存技术，通过对首次访问的对象进行缓存来减少服务器查找JNDI的代价。\\
 		\indent 访问资源：服务器获取请求报文中请求的资源web服务器（存放了web资源的服务器），负责向请求者提供对方请求的静态资源或动态运行后生成的资源。\\
 		%\subparagraph{}
 		\indent 如果请求静态资源，客户端发起询问上一次修改到现在之间有没有再修改。若返回状态码为服务器端没修改（304），浏览器会直接读取本地的该资源的缓存文件（负载均衡）。如 Figure 16 所示，可以看到第二次访问同一对象的时候直接从 cache 里面拿数据。
@@ -749,82 +861,85 @@ public BasicHttpResponse(final int code) {
 
 	\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{comment}
 	\begin{spacing}{1.0} 
 	\noindent BasicHttpRequest\\
 	\hspace*{\fill} \\ %空行
-	\noindent Request Message\\
-	\noindent method\\
-	host\\
-	path\\
-	requestUri\\
+	\noindent -Request Message: String\\
+	\noindent -method: String\\
+	-uri: String\\
+	-ver: ProtocolVersion\\
 	\hspace*{\fill} \\ %空行
-	\noindent BasicHttpRequest(method, path)\\
-	\noindent BasicHttpRequest(method, host, path)\\
-	\noindent BasicHttpRequest(method, requestUri)\\
-	\noindent getEntity()\\
-	\noindent setEntity()\\
-	getProtocolVersion()\\
-	getRequestLine()\\
-	toString()\\
+	+BasicHttpRequest(RequestLine requestline): void\\
+	+BasicHttpRequest(String method, String uri):void\\
+	+BasicHttpRequest(String method, String uri,\\
+	\indent ProtocolVersion ver): void\\
+	\noindent +getProtocolVersion(): ProtocolVersion\\
+	+getRequestLine(): RequestLine\\
+	+toString(): String\\
 
 	\clearpage
 
 	\noindent BasicHttpResponse\\
 	\hspace*{\fill} \\ %空行
-	Response Message\\
-	code\\
-	catalog\\
-	locale\\
-	version\\
-	reason\\
-	Phrase\\
-	statusline\\
-	reason\\
+	-Response Message: String\\
+	-code: int\\
+	-catalog: ResponsePhraseCatalog\\
+	-locale: Locale\\
+	-ver: ProtocolVersion\\
+	-reason: String\\
+	-statusline: StatusLine\\
 	\hspace*{\fill} \\ %空行
-	BasicHttpResponse(code, catalog, locale)\\
-	BasicHttpResponse(code, reasonPhrase)\\
-	BasicHttpResponse(code)\\
-	getEntity()\\
-	getLocale()\\
-	getProtocolVersion()\\
-	getReason(int code)\\
-	getStatusLine() \\
-	setEntity(entity)\\
-	setLocale(locale)\\
-	setReasonPhrase(reason)\\
-	setStatusCode(code) \\
-	setStatusLine(version, code) \\
-	setStatusLine(version, code, reason)\\
-	setStatusLine(statusline)\\
-	toString() \\
+	+BasicHttpResponse(ProtocolVersion ver, int code, String reason)\\
+	\noindent +BasicHttpResponse(StatusLine statusline): void\\
+	\noindent+BasicHttpResponse(StatusLine statusline, \\
+	\indent ReasonPhraseCatalog catalog, Locale locale): void\\
+	\noindent +getEntity(): HttpEntity\\
+	+getLocale(): Locale\\
+	+getProtocolVersion(): String\\
+	+getReason(int code): StatusLine\\
+	+getStatusLine(): void\\
+	+setEntity(HttpEntity entity): void\\
+	+setLocale(Locale locale): void\\
+	+setReasonPhrase(String reason): void\\
+	+setStatusCode(int code): void\\
+	+setStatusLine(ProtocolVersion ver, int code): void\\
+	+setStatusLine(ProtocolVersion ver, int code, String reason): void\\
+	+setStatusLine(StatusLine statusline): void\\
+	+toString(): String\\
+
+	
+	
 
 	\clearpage
-	HttpMessage\\
-	\noindent BasicHttpResponse\\
+
+	MessageHeaders\\
+
+	\clearpage
+	\noindent HeaderGroup\\
 	\hspace*{\fill} \\ %空行
-	name\\
-	header\\
-	value\\
-	params
+	-header: Header\\
+	-headers: Header[]\\
+	-name: String\\
 	\hspace*{\fill} \\ %空行
-	addHeader(header) \\
-	addHeader(name, value) \\
-	containsHeader(name) \\
-	getAllHeaders() \\
-	getFirstHeader(name)\\
-	getHeaders(name) \\
-	getLastHeader(name) \\
-	getParams() \\
-	getProtocolVersion()\\
-	headerIterator() \\
-	headerIterator(name) \\
-	removeHeader(header)\\
-	removeHeaders(name) \\
-	setHeader(header) \\
-	setHeader(name, value) \\
-	setHeaders(headers) \\
-	setParams(params)\\
+	+addHeader(Header header): void\\
+	+clear(): void\\
+	+clone(): Object\\
+	+containsHeader(String name): boolean\\
+	+copy(): HeaderGroup\\
+	+getAllHeaders(): Header[]\\
+	+getCondensedHeader(String name): Header\\
+	+getFirstHeader(String name): Header\\
+	+getHeaders(String name): Header[]\\
+	+getLastHeader(String name): Header\\
+	+iterator(): HeaderIterator\\
+	+iterator(String name): HeaderIterator\\
+	+removeHeader(Header header): void\\
+	+setHeaders(Header[] headers): void\\
+	+toString(): String\\
+	+updateHeader(Header header): void\\
 	\end{spacing}
+	\end{comment}
 
 
 \end{document}
