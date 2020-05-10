@@ -76,7 +76,7 @@
 	\section{Preface}
 	\subparagraph{}
 	\begin{CJK}{UTF8}{gbsn}
-		由于先前的课程中并没有讲过关于网络与信息方面的知识，笔者之也并没有接触过。而这次的选题是HttpComponents，涉及到大量的网络方面的知识，所以在准备这篇报告的第一阶段笔者的主要精力是放在研究一些基本的网络方面的知识。要讲到HttpComponents，就先要讲一下关于http的各种知识。
+		\indent \indent 这是一片关于 HttpConponents Core 的分析报告，本报告将三个部分融合在了一起，没有进行特别的区分。报告中包括关于相关网络知识的介绍（之前没学过，需要预习一下），关于 HttpConponents Core 的介绍，重点功能讲解（Http 请求处理），面向对象思想在工程中的具体应用，关于重点功能的设计思想，设计模式分析（分析了迭代器模式以及模版方法模式），关于面向对象设计原则的分析（SOLID）等。
 	\end{CJK}{}
 	\clearpage
 	
@@ -331,6 +331,8 @@
 		\caption{Classes of HttpCore}
 	\end{figure}
 
+	\clearpage
+
 	\subsection{BasicHttpRequest}
 	\begin{CJK}{UTF8}{gbsn}
 		路径：org.apache.http.message\\
@@ -383,13 +385,13 @@ public ClassName() {
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 8cm, width = 13cm]{pics/17_Request_constructors.png}	
+		\includegraphics[height = 7cm, width = 13cm]{pics/17_Request_constructors.png}	
 		\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 	\begin{CJK}{UTF8}{gbsn}
 		接下来分别介绍 BasicHttpRequest 中的构造器
 	\end{CJK}{}
-	\clearpage
+	%\clearpage
 	%\renewcommand{\baselinestretch}{1.0}
 	\begin{lstlisting}[language={java}]
 /**
@@ -512,7 +514,7 @@ public BasicHttpRequest(final Methods method, final HttpHost host, final String 
 	\end{lstlisting}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 3.5cm, width = 18cm]{pics/19_Request_table_2_5.png}	
+		\includegraphics[height = 3.8cm, width = 18cm]{pics/19_Request_table_2_5.png}	
 		%\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 
@@ -538,6 +540,18 @@ public BasicHttpRequest(final Methods method, final URI requestUri) {
 		%\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 根据上面的分析得到 BasicHttpRequest 的类图如下：\\
+	\end{CJK}{}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 7.5cm, width = 9.5cm]{pics/33_BasicHttpRequest_UML.JPG}	
+		%\caption{Constructors in BasicHttpRequest}
+	\end{figure}
+
+	\clearpage
+
 	\subsection{BasicHttpResponse}
 	\begin{CJK}{UTF8}{gbsn}
 		路径：org.apache.http.message\\
@@ -552,14 +566,14 @@ public BasicHttpRequest(final Methods method, final URI requestUri) {
 	\end{CJK}{}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 20cm, width = 16cm]{pics/21_BasicHttpResponse.png}	
-		\caption{Methods in BasicHttpRequest}
+		\includegraphics[height = 18cm, width = 15cm]{pics/21_BasicHttpResponse.png}	
+		\caption{Methods in BasicHttpResponse}
 	\end{figure}
 
 	\subsubsection{Constructors}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height = 5cm, width = 14cm]{pics/22_Response_constructors.png}	
+		\includegraphics[height = 4.5cm, width = 13cm]{pics/22_Response_constructors.png}	
 		\caption{Constructors in BasicHttpResponse}
 	\end{figure}
 
@@ -648,6 +662,155 @@ public BasicHttpResponse(final int code) {
 		%\caption{Constructors in BasicHttpRequest}
 	\end{figure}
 
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 根据上面的分析得到 BasicHttpResponse 的类图如下：
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 12cm, width = 12cm]{pics/32_BasicHttpResponse_UML.JPG}	
+		%\caption{Constructors in BasicHttpRequest}
+	\end{figure}
+	\clearpage
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 经过上面的分析得到UML图（部分）：
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 23cm, width = 17cm]{pics/31_Classes_UML.JPG}	
+		%\caption{Constructors in BasicHttpRequest}
+	\end{figure}
+
+	\clearpage
+	\subsection{Design Principles}
+	\begin{CJK}{UTF8}{gbsn}
+		\noindent 下面简述一下面向对象程序设计的五大原则（SOLID）在 HttpComponents Core 中的体现。
+	\end{CJK}{}
+	\subsubsection{Liskov Substitution Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 里氏替换（LSP）是为了实现面向对象程序设计中的继承和复用，要求子类可以替换掉父类，而原工程的功能不受影响，近二十年前父类被复用。\\
+		\indent 以 BasicHttpResponse 类为例，其是 HeaderGroup 的子类，此时如果使用该父类，则修改方法一定也适用于子类 BasicHttpResponse。
+	\end{CJK}{}
+
+	\subsubsection{Single Responsibility Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 单一职责（SRP）是为了实现类良好的复用性而进行的解耦，要求一个类只完成一个功能，反之如果一个类耦合了过多指责则其中一个职责出现问题该类中剩下其他的职责也将会受到影响，进而引起连锁反应。单一职责保障了整个工程的高内聚低耦合。\\
+		\indent 很明显，在 BasicHttpRequest 和 BasicHttpResponse 两个类中的职责就是创建请求和创建响应。同时，遍历 HttpComponents Core 中的所有的类，发现几乎所有类都符合单一职责的原则。另外之后会介绍的迭代器模式也是单一职责的体现。
+	\end{CJK}{}
+
+	\subsubsection{Open Closed Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 开放封闭（OCP）要求软件实体是对扩展开放但是对修改封闭，如此在有新的需求或变更（比如要求 HttpComponents 组件实现新的功能）的时候仅需对现有代码进行扩展，而无需对类进行修改。
+		\indent 在 HttpComponents Core 中，为了实现 http 的9种请求方法需要实现多种类，以和请求处理有关的 Request 和 Response 为例，通过对于 HttpRequest 和 HttpResponse 类的继承对其进行扩展而不修改其本身，由此有利于程序的封装，降低模块之间的耦合度。另外在后面的设计模式分析中的模版设计模式就很好地体现了开放封闭原则，抽象类提供模版，其子类通过对其的扩展实现具体功能。
+	\end{CJK}{}
+
+	\subsubsection{Interface Segregation Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 接口隔离（ISP）要求给每个模块尽可能使用单一专用的接口，而不是共用一个包含很多方法的臃肿的借口。每个模块都有对应的接口，该接口中仅含其需要用到的方法，不用的不含。\\
+		\indent 在 HttpComponents Core 中，以 对于主要的功能都实现了接口隔离，每个类由自己单独的接口，接口之间通过继承关系组织：
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 9cm, width = 8.5cm]{pics/36_Interfaces.jpg}	
+		%\caption{Http Request Processing}
+	\end{figure}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 通过接口隔离同样实现了降低耦合度，各个类之间的联系被进一步削弱，同时对于每个类使用独立的接口使得后期代码维护成本降低，如果需要对于某个类添加或删去某些操作仅需修改其对应独立的接口，而不用改变其他类的接口，也提高了程序的稳定性。
+	\end{CJK}{}
+
+	\subsubsection{Dependency Inversion Principle}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 依赖倒转（DIP）要求在程序设计时依赖于抽象（实现依赖于抽象），而不是依赖于具体细节。“倒转”是指与面向过程程序设计相比较，此时由于不同的实现会因不同的细节而不同所以需要依赖细节（高层依赖低层），故此时一旦低层的细节发生变动，高层的实现也需要变动，程序的维护成本就会很高。\\
+		\indent 在面向对象编程中，由于抽象部分一般不会改变，不论实现的细节如何变动，由于其所依赖的抽象不用改变，故客户端序也就无需修改，从而降低客户与实现细节之间的耦合度，使得程序的维护成本降低。\\
+		%//here
+		\indent 在 HttpComponents Core 中，尽管实现细节多种多样，但是都已经被抽象进接口中，类通过继承接口实现依赖倒转（根据接口隔离原则，不同的类拥有独立的接口）。
+		%\indent 
+	\end{CJK}{}
+
+	\clearpage
+	\subsection{Design Patterns}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 在面向对象程序设计中的设计模式非常多，这里选取行为模式中的迭代器模式和模版方法模式进行简要分析。
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 7cm, width = 13.5cm]{pics/35_Design_Patterns.png}	
+		%\caption{Http Request Processing}
+	\end{figure}
+	\subsubsection{Iterator Pattern}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 迭代器模式就是希望用户通过特定的接口访问容器内的数据而不需要了解容器内部的数据结构，进而降低容器之间的耦合度。由于访问一个容器内部的数据就必须在其中实现对应的方法，此时只能给将访问数据的方法耦和进容器接口中，而若没有实现则需要额外地修改容器方法。因此迭代器模式就将处理容器数据的逻辑就和容器本身的实现解耦。在访问容器数据时只需要使用容器提供的 Iterator 对象，而容器的内部实现以及数据结构对于使用者来说的不可见的。\\
+		\indent 迭代器的使用场景：\\
+		\indent \indent 1. 需要访问的对象的数据的组织结构不是关注的重点时\\
+		\indent \indent 2. 需要遍历多个聚集结构从而需要统一接口时\\
+		\indent \indent 3. 为保证聚集结构本身数据安全而修改只针对副本时\\
+		\indent 在以上场景下使用迭代器似乎是最有效的方法，将数据的行为统一提取出来封装在迭代器中并通过迭代器来实现数据的遍历。同时这也是面向对象程序设计原则中的单一职责的体现。\\
+		\indent 这里我们关注 BasicHeaderIterator 中的 next() 方法和 hasNext() 方法（BasicHeaderIterator 中进行了 重写），由这两个方法实现遍历整个容器数据。迭代器在 HttpComponents Core 中很常见，凡事在上述场景下的情况都需要用到迭代器。
+	\end{CJK}{}
+
+	\begin{lstlisting}[language={java}]
+@Override
+public boolean hasNext() {
+    return this.currentIndex >= 0;
+}
+
+/**
+ * Obtains the next header from this iteration.
+ *
+ * @return  the next header in this iteration
+ *
+ * @throws NoSuchElementException   if there are no more headers
+ */
+@Override
+public Header next() throws NoSuchElementException {
+
+    final int current = this.currentIndex;
+    if (current < 0) {
+        throw new NoSuchElementException("Iteration already finished.");
+    }
+
+    this.currentIndex = findNext(current);
+
+    return this.allHeaders[current];
+}
+	\end{lstlisting}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent  其中 hasNext() 方法判断在迭代中是否还有其他 header，next() 则返回下一个 header()。在迭代器中先调用 hasNext() 方法通过索引值来反应迭代中是否还有其他 header，之后调用 next() 的时候检查索引值，若为合法数值就返回对应 header。\\
+		\indent 该迭代器在 AsyncRequestBuilder.java 中被使用
+	\end{CJK}{}
+	\begin{lstlisting}[language={java}]
+public AsyncRequestBuilder removeHeaders(final String name) {
+    if (name == null || headerGroup == null) {
+        return this;
+    }
+    for (final Iterator<Header> i = headerGroup.headerIterator(); i.hasNext(); ) {
+        final Header header = i.next();
+        if (name.equalsIgnoreCase(header.getName())) {
+            i.remove();
+        }
+    }
+    return this;
+}
+	\end{lstlisting}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 通过 Iterator 实现对 header 的遍历，进而实现删除 header。\\
+		\indent 通过迭代器模式可以在不关注容器内部数据结构的情况下访问容器数据，体现了单一职责的原则。
+	\end{CJK}{}
+
+	\subsubsection{Template Pattern}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 模版方法模式中通过一个抽象类（AbstractClass）公开定义了执行它的方法的模板，它的子类可以按需要重写方法实现，但调用将以抽象类中定义的方式进行。即定义一个操作中的算法的骨架，同时将一些步骤延迟到其子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤，这也是开放封闭原则的一种体现。\\
+		\indent 在 HttpComponents Core 中，抽象类 AbstractHttpMessage 中定义了各种关于消息报头的操作（addHeader(), containsHeader(), getAllHeaders(), getFirstHeader(), getHeaders(), getLastHeader(), setHeader(), setHeaders()等），而作为其具体的实现类 BasicHttpRequest 和 BasicHttpResponse 中对上述方法进行了重写。
+	\end{CJK}{}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 10cm, width = 9cm]{pics/37_Template.jpg}	
+		%\caption{Http Request Processing}
+	\end{figure}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 模版方法模式中封装了基本的方法，在子类中实现了扩展，体现了开放封闭原则，行为由抽象父类控制，具体的子类来实现，便于程序的维护。
+	\end{CJK}{}
+
+	\clearpage
 	\section{Functions}
 	\begin{CJK}{UTF8}{gbsn}
 		Http请求处理的过程包括以下几个步骤：\\
@@ -675,7 +838,8 @@ public BasicHttpResponse(final int code) {
 
 	\subsection{Receving Requests}
 	\begin{CJK}{UTF8}{gbsn}
-		HTTP请求报文：由请求行（request line）、请求头部（header）、空行和请求数据4个部分组成，如 Figure 15 所示。\\ 
+		\indent 客户端对请求的发送体现了JavaEE各个层次模型中的传输对象模式(Transfer Object Pattern)，传输的报文是拆分为四部分组成的。\\
+		\noindent HTTP请求报文：由请求行（request line）、请求头部（header）、空行和请求数据4个部分组成，如 Figure 15 所示。\\ 
 		接收请求：接收客户端请求报文中对某资源的请求。
 	\end{CJK}{}
 
@@ -688,7 +852,7 @@ public BasicHttpResponse(final int code) {
 	\subsection{Processing Requests}
 	\begin{CJK}{UTF8}{gbsn}
 		\subparagraph{}
-		处理请求：服务器对请求报文进行解析，获取请求的资源及请求方法等相关信息 根据方法，资源，首部和可选的主体部分对请求进行处理。\\
+		处理请求：服务器对请求报文进行解析，获取请求的资源及请求方法等相关信息根据方法，资源，首部和可选的主体部分对请求进行处理。\\
 		（之前说过，http常用的请求方法：GET 、 POST 、 PUT 、 DELETE 、 PATCH、HEAD、OPTIONS、TRACE、\\
 		CONNECT）
 	\end{CJK}{}
@@ -697,6 +861,7 @@ public BasicHttpResponse(final int code) {
 	\indent 
 	\begin{CJK}{UTF8}{gbsn}
 		%\subparagraph{}
+		\indent 服务器对于资源的访问体现了JavaEE各个层次模型中的服务器定位模式(Service Locater Pattern)，充分利用了缓存技术，通过对首次访问的对象进行缓存来减少服务器查找JNDI的代价。\\
 		\indent 访问资源：服务器获取请求报文中请求的资源web服务器（存放了web资源的服务器），负责向请求者提供对方请求的静态资源或动态运行后生成的资源。\\
 		%\subparagraph{}
 		\indent 如果请求静态资源，客户端发起询问上一次修改到现在之间有没有再修改。若返回状态码为服务器端没修改（304），浏览器会直接读取本地的该资源的缓存文件（负载均衡）。如 Figure 16 所示，可以看到第二次访问同一对象的时候直接从 cache 里面拿数据。
@@ -749,6 +914,115 @@ public BasicHttpResponse(final int code) {
 
 	\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEW PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Conclusion}
+	\begin{CJK}{UTF8}{gbsn}
+		\indent \indent 以上即为本次关于 HttpComponents Core 的分析报告。在准备这次分析报告的过程中确实学到了不少东西，之前没有接触过关于网络的知识，关于 http 的相关概念也都是现学，感觉实际上并不是特别难。关于面向对象程序设计方面，从本学期开始时的分不清面向过程和面向对象到现在稍微有点入门能够简单分析一个大型工程的结构。由于之前从未学习过 Java 语言，故目前还没有能力对整个工程做更细致的分析（这也就涉及到了算法本身，和面向对象程序设计相差甚远）。当然在看代码的过程中对于 Java 语法和理解规模较大的项目工程也掌握了不少，HttpComponents Core 应该是我在 Github 上面 fork 的第一个别人的项目。\\
+		\indent 由于时间有限，在分析 HttpComponents Core 时也并没有将其中所有的类都拿出来细看，重点是针对 HttpRequest 和 HttpResponse 进行分析，还有不少内容没有照顾到。等到下学期学习了计算机网络之后对于整个工程应该就会有更深的理解。
+	\end{CJK}{}
+	\begin{comment}
+	\begin{spacing}{1.0} 
+	\noindent BasicHttpRequest\\
+	\hspace*{\fill} \\ %空行
+	\noindent -Request Message: String\\
+	\noindent -method: String\\
+	-uri: String\\
+	-ver: ProtocolVersion\\
+	\hspace*{\fill} \\ %空行
+	+BasicHttpRequest(RequestLine requestline): void\\
+	+BasicHttpRequest(String method, String uri):void\\
+	+BasicHttpRequest(String method, String uri,\\
+	\indent ProtocolVersion ver): void\\
+	\noindent +getProtocolVersion(): ProtocolVersion\\
+	+getRequestLine(): RequestLine\\
+	+toString(): String\\
 
+	\clearpage
+
+	\noindent BasicHttpResponse\\
+	\hspace*{\fill} \\ %空行
+	-Response Message: String\\
+	-code: int\\
+	-catalog: ResponsePhraseCatalog\\
+	-locale: Locale\\
+	-ver: ProtocolVersion\\
+	-reason: String\\
+	-statusline: StatusLine\\
+	\hspace*{\fill} \\ %空行
+	+BasicHttpResponse(ProtocolVersion ver, int code, String reason)\\
+	\noindent +BasicHttpResponse(StatusLine statusline): void\\
+	\noindent+BasicHttpResponse(StatusLine statusline, \\
+	\indent ReasonPhraseCatalog catalog, Locale locale): void\\
+	\noindent +getEntity(): HttpEntity\\
+	+getLocale(): Locale\\
+	+getProtocolVersion(): String\\
+	+getReason(int code): StatusLine\\
+	+getStatusLine(): void\\
+	+setEntity(HttpEntity entity): void\\
+	+setLocale(Locale locale): void\\
+	+setReasonPhrase(String reason): void\\
+	+setStatusCode(int code): void\\
+	+setStatusLine(ProtocolVersion ver, int code): void\\
+	+setStatusLine(ProtocolVersion ver, int code, String reason): void\\
+	+setStatusLine(StatusLine statusline): void\\
+	+toString(): String\\
+
+	
+	
+
+	\clearpage
+
+	MessageHeaders\\
+
+	\clearpage
+	\noindent HeaderGroup\\
+	\hspace*{\fill} \\ %空行
+	-header: Header\\
+	-headers: Header[]\\
+	-name: String\\
+	\hspace*{\fill} \\ %空行
+	+addHeader(Header header): void\\
+	+clear(): void\\
+	+clone(): Object\\
+	+containsHeader(String name): boolean\\
+	+copy(): HeaderGroup\\
+	+getAllHeaders(): Header[]\\
+	+getCondensedHeader(String name): Header\\
+	+getFirstHeader(String name): Header\\
+	+getHeaders(String name): Header[]\\
+	+getLastHeader(String name): Header\\
+	+iterator(): HeaderIterator\\
+	+iterator(String name): HeaderIterator\\
+	+removeHeader(Header header): void\\
+	+setHeaders(Header[] headers): void\\
+	+toString(): String\\
+	+updateHeader(Header header): void\\
+	\end{spacing}
+	\end{comment}
+
+	\begin{comment}
+	\clearpage
+	\begin{spacing}{1.0} 
+	\noindent AbstractHttpMessage\\
+	\hspace*{\fill} \\ %空行
+	-header: Header\\
+	-headers: Header[]\\
+	-name: String\\
+	-value: String\\
+	\hspace*{\fill} \\ %空行
+	+addHeader(Header header): void\\
+	+addHeader(String name, String value): void\\
+	+containsHeader(String name): boolean\\
+	+getAllHeaders(): Header[]\\
+	+getFirstHeader(String name): Header\\
+	+getHeaders(String name): Header[]\\
+	+getLastHeader(String name): Header\\
+	+headerIterator(): HeaderIterator\\
+	+headerIterator(String name): HeaderIterator\\
+	+removeHeader(Header header): void\\
+	+removeHeaders(String name): void\\
+	+setHeader(String name, String value): void\\
+	+setHeaders(Header[] headers): void\\
+	\end{spacing}
+	\end{comment}
 
 \end{document}
